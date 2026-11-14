@@ -33,8 +33,14 @@ INTRO_FR = (
     "Web Free rassemble des utilitaires gratuits qui s’utilisent dans le navigateur. "
     "Chaque outil vit sur son propre sous-domaine de web-free.site."
 )
-OPEN_EN = "Open tool"
-OPEN_FR = "Ouvrir l’outil"
+SEARCH_LABEL_EN = "Filter tools"
+SEARCH_LABEL_FR = "Filtrer les outils"
+SEARCH_PLACEHOLDER_EN = "Search tools…"
+SEARCH_PLACEHOLDER_FR = "Rechercher un outil…"
+NO_RESULTS_EN = "No tools match that search."
+NO_RESULTS_FR = "Aucun outil ne correspond à cette recherche."
+CATS_NAV_EN = "Categories"
+CATS_NAV_FR = "Catégories"
 FOOT_EN = (
     "All tools listed here are free to use in your browser. "
     "This page links every live utility on web-free.site."
@@ -99,7 +105,6 @@ def page(lang: str) -> str:
     desc = DESC_FR if is_fr else DESC_EN
     hero = HERO_FR if is_fr else HERO_EN
     intro = INTRO_FR if is_fr else INTRO_EN
-    open_label = OPEN_FR if is_fr else OPEN_EN
     foot = FOOT_FR if is_fr else FOOT_EN
     tools_label = TOOLS_LABEL_FR if is_fr else TOOLS_LABEL_EN
     og_locale = "fr_FR" if is_fr else "en_US"
@@ -108,88 +113,124 @@ def page(lang: str) -> str:
         if is_fr
         else '<a href="/fr/" lang="fr" hreflang="fr">Français</a>'
     )
+    search_label = SEARCH_LABEL_FR if is_fr else SEARCH_LABEL_EN
+    search_ph = SEARCH_PLACEHOLDER_FR if is_fr else SEARCH_PLACEHOLDER_EN
+    no_results = NO_RESULTS_FR if is_fr else NO_RESULTS_EN
+    cats_nav = CATS_NAV_FR if is_fr else CATS_NAV_EN
 
+    toc_links = []
     sections = []
     for cat in DATA["categories"]:
         cat_name = cat["name_fr"] if is_fr else cat["name_en"]
-        cards = []
-        for t in cat["tools"]:
-            tdesc = t["desc_fr"] if is_fr else t["desc_en"]
-            cards.append(
-                f'''    <a class="card" href="{esc(t["url"])}">
-      <h3>{esc(t["name"])}</h3>
-      <p>{esc(tdesc)}</p>
-      <span class="go">{esc(open_label)} <span aria-hidden="true">→</span></span>
-    </a>'''
+        toc_links.append(
+            f'      <a href="#{esc(cat["id"])}" data-cat="{esc(cat["id"])}">{esc(cat_name)}</a>'
+        )
+        rows = []
+        for tool in cat["tools"]:
+            tdesc = tool["desc_fr"] if is_fr else tool["desc_en"]
+            hay = f"{tool['name']} {tdesc}"
+            rows.append(
+                "      <li class=\"tool\" data-search=\"{hay}\">\n"
+                "        <a href=\"{url}\">{name}</a>\n"
+                "        <span class=\"desc\">{desc}</span>\n"
+                "      </li>".format(
+                    hay=esc(hay),
+                    url=esc(tool["url"]),
+                    name=esc(tool["name"]),
+                    desc=esc(tdesc),
+                )
             )
         sections.append(
-            f'''  <section class="category" id="{esc(cat["id"])}" aria-labelledby="h-{esc(cat["id"])}">
-    <h2 id="h-{esc(cat["id"])}">{esc(cat_name)}</h2>
-    <div class="grid">
-{chr(10).join(cards)}
-    </div>
-  </section>'''
+            "  <section class=\"category\" id=\"{cid}\" aria-labelledby=\"h-{cid}\">\n"
+            "    <h2 id=\"h-{cid}\">{cname}</h2>\n"
+            "    <ul class=\"tool-list\">\n"
+            "{rows}\n"
+            "    </ul>\n"
+            "  </section>".format(
+                cid=esc(cat["id"]),
+                cname=esc(cat_name),
+                rows="\n".join(rows),
+            )
         )
 
-    return f'''<!DOCTYPE html>
-<html lang="{lang}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)}</title>
-  <meta name="description" content="{esc(desc)}">
-  <link rel="canonical" href="{esc(canonical)}">
-  <link rel="alternate" hreflang="en" href="{SITE}/">
-  <link rel="alternate" hreflang="fr" href="{SITE}/fr/">
-  <link rel="alternate" hreflang="x-default" href="{SITE}/">
-  <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Web Free">
-  <meta property="og:title" content="{esc(title)}">
-  <meta property="og:description" content="{esc(desc)}">
-  <meta property="og:url" content="{esc(canonical)}">
-  <meta property="og:image" content="{SITE}/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="{og_locale}">
-  <meta property="og:locale:alternate" content="{"en_US" if is_fr else "fr_FR"}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{esc(title)}">
-  <meta name="twitter:description" content="{esc(desc)}">
-  <meta name="twitter:image" content="{SITE}/og.png">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="application/ld+json">
-{json_ld(lang)}
-  </script>
-</head>
-<body>
-  <a class="skip" href="#main">{"Aller au contenu" if is_fr else "Skip to content"}</a>
-  <header class="site-header">
-    <div class="inner">
-      <a class="wordmark" href="{ "/fr/" if is_fr else "/" }">Web <span>Free</span></a>
-      <nav aria-label="{"Langue" if is_fr else "Language"}">{nav_other}</nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="hero">
-      <p class="kicker">{len(ALL_TOOLS)} {esc(tools_label)}</p>
-      <h1>{esc(hero)}</h1>
-      <p class="lede">{esc(intro)}</p>
-    </section>
-{chr(10).join(sections)}
-  </main>
-  <footer class="site-footer">
-    <div class="inner">
-      <p>{esc(foot)}</p>
-      <p class="fine"><a href="{SITE}/">web-free.site</a> · <a href="/sitemap.xml">Sitemap</a></p>
-    </div>
-  </footer>
-</body>
-</html>
-'''
+    html_out = []
+    html_out.append("<!DOCTYPE html>")
+    html_out.append(f'<html lang="{lang}">')
+    html_out.append("<head>")
+    html_out.append('  <meta charset="utf-8">')
+    html_out.append('  <meta name="viewport" content="width=device-width, initial-scale=1">')
+    html_out.append(f"  <title>{esc(title)}</title>")
+    html_out.append(f'  <meta name="description" content="{esc(desc)}">')
+    html_out.append(f'  <link rel="canonical" href="{esc(canonical)}">')
+    html_out.append(f'  <link rel="alternate" hreflang="en" href="{SITE}/">')
+    html_out.append(f'  <link rel="alternate" hreflang="fr" href="{SITE}/fr/">')
+    html_out.append(f'  <link rel="alternate" hreflang="x-default" href="{SITE}/">')
+    html_out.append('  <meta name="robots" content="index,follow">')
+    html_out.append('  <meta property="og:type" content="website">')
+    html_out.append('  <meta property="og:site_name" content="Web Free">')
+    html_out.append(f'  <meta property="og:title" content="{esc(title)}">')
+    html_out.append(f'  <meta property="og:description" content="{esc(desc)}">')
+    html_out.append(f'  <meta property="og:url" content="{esc(canonical)}">')
+    html_out.append(f'  <meta property="og:image" content="{SITE}/og.png">')
+    html_out.append('  <meta property="og:image:width" content="1200">')
+    html_out.append('  <meta property="og:image:height" content="630">')
+    html_out.append(f'  <meta property="og:locale" content="{og_locale}">')
+    alt_locale = "en_US" if is_fr else "fr_FR"
+    html_out.append(f'  <meta property="og:locale:alternate" content="{alt_locale}">')
+    html_out.append('  <meta name="twitter:card" content="summary_large_image">')
+    html_out.append(f'  <meta name="twitter:title" content="{esc(title)}">')
+    html_out.append(f'  <meta name="twitter:description" content="{esc(desc)}">')
+    html_out.append(f'  <meta name="twitter:image" content="{SITE}/og.png">')
+    html_out.append('  <link rel="icon" href="/favicon.svg" type="image/svg+xml">')
+    html_out.append('  <link rel="icon" href="/favicon.ico" sizes="any">')
+    html_out.append('  <link rel="apple-touch-icon" href="/apple-touch-icon.png">')
+    html_out.append('  <link rel="stylesheet" href="/styles.css">')
+    html_out.append('  <script type="application/ld+json">')
+    html_out.append(json_ld(lang))
+    html_out.append("  </script>")
+    html_out.append("</head>")
+    html_out.append("<body>")
+    skip = "Aller au contenu" if is_fr else "Skip to content"
+    html_out.append(f'  <a class="skip" href="#main">{skip}</a>')
+    html_out.append('  <header class="site-header">')
+    html_out.append('    <div class="inner">')
+    home = "/fr/" if is_fr else "/"
+    html_out.append(f'      <a class="wordmark" href="{home}">Web <span>Free</span></a>')
+    lang_label = "Langue" if is_fr else "Language"
+    html_out.append(f'      <nav aria-label="{lang_label}">{nav_other}</nav>')
+    html_out.append("    </div>")
+    html_out.append("  </header>")
+    html_out.append('  <main id="main">')
+    html_out.append('    <section class="hero">')
+    html_out.append(f'      <p class="kicker">{len(ALL_TOOLS)} {esc(tools_label)}</p>')
+    html_out.append(f"      <h1>{esc(hero)}</h1>")
+    html_out.append(f'      <p class="lede">{esc(intro)}</p>')
+    html_out.append("    </section>")
+    html_out.append(f'    <nav class="toc" aria-label="{esc(cats_nav)}">')
+    html_out.extend(toc_links)
+    html_out.append("    </nav>")
+    html_out.append('    <form class="filter" role="search" action="#" method="get">')
+    html_out.append(f'      <label for="tool-filter">{esc(search_label)}</label>')
+    html_out.append(
+        f'      <input id="tool-filter" type="search" name="q" placeholder="{esc(search_ph)}" autocomplete="off" enterkeyhint="search">'
+    )
+    html_out.append("    </form>")
+    html_out.append(f'    <p id="no-results" hidden>{esc(no_results)}</p>')
+    html_out.extend(sections)
+    html_out.append("  </main>")
+    html_out.append('  <footer class="site-footer">')
+    html_out.append('    <div class="inner">')
+    html_out.append(f"      <p>{esc(foot)}</p>")
+    html_out.append(
+        f'      <p class="fine"><a href="{SITE}/">web-free.site</a> · <a href="/sitemap.xml">Sitemap</a></p>'
+    )
+    html_out.append("    </div>")
+    html_out.append("  </footer>")
+    html_out.append('  <script src="/filter.js" defer></script>')
+    html_out.append("</body>")
+    html_out.append("</html>")
+    html_out.append("")
+    return "\n".join(html_out)
 
 
 def not_found() -> str:

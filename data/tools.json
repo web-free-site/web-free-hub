@@ -67,6 +67,13 @@
           "name": "Free Background Remover",
           "desc_en": "Remove photo backgrounds in your browser with BiRefNet. No upload, no sign-up; images stay on your device.",
           "desc_fr": "Retirez l’arrière-plan des photos dans le navigateur avec BiRefNet. Sans envoi, sans inscription ; les images restent sur votre appareil."
+        },
+        {
+          "slug": "free-image-compressor",
+          "url": "https://free-image-compressor.web-free.site/",
+          "name": "Free Image Compressor",
+          "desc_en": "Compress and convert JPG, PNG, WebP, and AVIF in your browser. Batch queue and ZIP download. No upload, no sign-up.",
+          "desc_fr": "Compressez et convertissez des JPG, PNG, WebP et AVIF dans le navigateur. File d’attente et téléchargement ZIP. Sans envoi, sans inscription."
         }
       ]
     },

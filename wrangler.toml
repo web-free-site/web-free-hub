@@ -1,0 +1,19 @@
+name = "web-free-hub"
+account_id = "c26dbba499d049a1051c152c720cf4c5"
+main = "src/worker.js"
+compatibility_date = "2025-10-11"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+run_worker_first = true
+
+[[routes]]
+pattern = "web-free.site"
+custom_domain = true
+
+[[routes]]
+pattern = "www.web-free.site"
+custom_domain = true

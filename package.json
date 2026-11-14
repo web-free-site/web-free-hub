@@ -1,0 +1,12 @@
+{
+  "name": "web-free-hub",
+  "private": true,
+  "description": "Apex homepage for web-free.site, listing every live free utility on the domain.",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "deploy": "python3 scripts/build.py && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.160.1"
+  }
+}

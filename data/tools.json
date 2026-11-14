@@ -1,0 +1,137 @@
+{
+  "categories": [
+    {
+      "id": "documents",
+      "name_en": "Documents & writing",
+      "name_fr": "Documents et rédaction",
+      "tools": [
+        {
+          "slug": "free-word-counter",
+          "url": "https://free-word-counter.web-free.site/",
+          "name": "Free Word Counter",
+          "desc_en": "Count words, characters, sentences, and reading time in your browser. No sign-up; text stays on your device.",
+          "desc_fr": "Comptez les mots, caractères, phrases et le temps de lecture dans le navigateur. Sans inscription ; le texte reste sur votre appareil."
+        },
+        {
+          "slug": "free-pdf-converter",
+          "url": "https://free-pdf-converter.web-free.site/",
+          "name": "Free PDF Converter",
+          "desc_en": "Merge, split, compress, convert, and edit PDFs in your browser. No uploads, no sign-up, no file limits.",
+          "desc_fr": "Fusionnez, découpez, compressez, convertissez et modifiez des PDF dans le navigateur. Sans envoi de fichiers, sans inscription, sans limite de taille."
+        },
+        {
+          "slug": "free-cv-maker",
+          "url": "https://free-cv-maker.web-free.site/",
+          "name": "Free CV Maker",
+          "desc_en": "Build an ATS-friendly CV or resume in your browser and export a PDF. No account required.",
+          "desc_fr": "Rédigez un CV adapté aux ATS dans le navigateur et exportez-le en PDF. Sans compte."
+        },
+        {
+          "slug": "free-invoice-generator",
+          "url": "https://free-invoice-generator.web-free.site/",
+          "name": "Free Invoice Generator",
+          "desc_en": "Create professional invoices, quotes, and receipts in your browser, including RWF, FCFA, USD, and EUR. No sign-up.",
+          "desc_fr": "Créez des factures, devis et reçus professionnels dans le navigateur (RWF, FCFA, USD, EUR). Sans inscription."
+        }
+      ]
+    },
+    {
+      "id": "images",
+      "name_en": "Images & codes",
+      "name_fr": "Images et codes",
+      "tools": [
+        {
+          "slug": "free-qr-code-creator",
+          "url": "https://free-qr-code-creator.web-free.site/",
+          "name": "Free QR Code Creator",
+          "desc_en": "Create styled QR codes and barcodes in your browser, and scan codes, with no sign-up.",
+          "desc_fr": "Créez des QR codes et des codes-barres dans le navigateur, et scannez des codes, sans inscription."
+        },
+        {
+          "slug": "free-image-resizer",
+          "url": "https://free-image-resizer.web-free.site/",
+          "name": "Free Image Resizer",
+          "desc_en": "Resize, compress, convert, crop, and rotate images in your browser. No sign-up; files stay on your device.",
+          "desc_fr": "Redimensionnez, compressez, convertissez, recadrez et faites pivoter des images dans le navigateur. Sans inscription ; les fichiers restent sur votre appareil."
+        },
+        {
+          "slug": "free-image-to-text",
+          "url": "https://free-image-to-text.web-free.site/",
+          "name": "Free Image to Text",
+          "desc_en": "Browser OCR for JPG, PNG, WebP, and PDF. English, French, and Swahili. Images never leave your device.",
+          "desc_fr": "OCR dans le navigateur pour JPG, PNG, WebP et PDF. Anglais, français et swahili. Les images ne quittent pas votre appareil."
+        }
+      ]
+    },
+    {
+      "id": "calc",
+      "name_en": "Calculators & currency",
+      "name_fr": "Calculs et devises",
+      "tools": [
+        {
+          "slug": "free-online-calculator",
+          "url": "https://free-online-calculator.web-free.site/",
+          "name": "Free Online Calculator",
+          "desc_en": "Instant online calculators with no sign-up. Works offline.",
+          "desc_fr": "Calculatrices en ligne instantanées, sans inscription, et utilisables hors connexion."
+        },
+        {
+          "slug": "free-currency-converter",
+          "url": "https://free-currency-converter.web-free.site/",
+          "name": "Free Currency Converter",
+          "desc_en": "Live exchange rates for RWF, CFA, KES, UGX, TZS, USD, EUR, and 140+ currencies. No API key.",
+          "desc_fr": "Taux de change en direct pour le RWF, le CFA, le KES, l’UGX, le TZS, l’USD, l’EUR et plus de 140 devises. Sans clé API."
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "name_en": "Text & SEO",
+      "name_fr": "Texte et SEO",
+      "tools": [
+        {
+          "slug": "free-ai-humanizer",
+          "url": "https://free-ai-humanizer.web-free.site/",
+          "name": "Free AI Humanizer",
+          "desc_en": "Rewrite AI-generated text with a more natural tone in your browser. No API key.",
+          "desc_fr": "Réécrivez un texte généré par IA avec un ton plus naturel, dans le navigateur. Sans clé API."
+        },
+        {
+          "slug": "free-seo-generator",
+          "url": "https://free-seo-generator.web-free.site/",
+          "name": "Free SEO Generator",
+          "desc_en": "Generate meta tags, robots.txt, XML sitemaps, JSON-LD, and hreflang tags in the browser. No sign-up.",
+          "desc_fr": "Générez des balises meta, un robots.txt, un sitemap XML, du JSON-LD et des balises hreflang dans le navigateur. Sans inscription."
+        },
+        {
+          "slug": "free-backlink-generator",
+          "url": "https://free-backlink-generator.web-free.site/",
+          "name": "Free Backlink Generator",
+          "desc_en": "Builds ping and analysis URLs and a directory checklist in the browser. A helper tool — not a ranking guarantee.",
+          "desc_fr": "Construit des URL de ping et d’analyse, plus une checklist d’annuaires, dans le navigateur. Outil d’aide — pas une garantie de classement."
+        }
+      ]
+    },
+    {
+      "id": "testdata",
+      "name_en": "Test data",
+      "name_fr": "Données de test",
+      "tools": [
+        {
+          "slug": "free-fake-address-generator",
+          "url": "https://free-fake-address-generator.web-free.site/",
+          "name": "Free Fake Address Generator",
+          "desc_en": "Generate random test addresses (street, city, state, ZIP, phone) for the US, UK, and Canada. Client-side, no sign-up.",
+          "desc_fr": "Générez des adresses de test aléatoires (rue, ville, région, code postal, téléphone) pour les États-Unis, le Royaume-Uni et le Canada. Côté client, sans inscription."
+        },
+        {
+          "slug": "free-fake-name-generator",
+          "url": "https://free-fake-name-generator.web-free.site/",
+          "name": "Free Fake Name Generator",
+          "desc_en": "Generate fake names, emails, phones, addresses, and jobs for testing. Export CSV or JSON. Browser-only, no sign-up.",
+          "desc_fr": "Générez des noms, e-mails, téléphones, adresses et métiers fictifs pour vos tests. Export CSV ou JSON. Dans le navigateur, sans inscription."
+        }
+      ]
+    }
+  ]
+}

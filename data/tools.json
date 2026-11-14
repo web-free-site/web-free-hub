@@ -95,6 +95,13 @@
           "name": "Free Currency Converter",
           "desc_en": "Live exchange rates for RWF, CFA, KES, UGX, TZS, USD, EUR, and 140+ currencies. No API key.",
           "desc_fr": "Taux de change en direct pour le RWF, le CFA, le KES, l’UGX, le TZS, l’USD, l’EUR et plus de 140 devises. Sans clé API."
+        },
+        {
+          "slug": "free-unit-converter",
+          "url": "https://free-unit-converter.web-free.site/",
+          "name": "Free Unit Converter",
+          "desc_en": "Convert length, mass, temperature, volume, and 13 other categories — 200+ units — in your browser. No sign-up.",
+          "desc_fr": "Convertissez longueurs, masses, températures, volumes et 13 autres catégories — plus de 200 unités — dans le navigateur. Sans inscription."
         }
       ]
     },

@@ -337,7 +337,7 @@ def make_og():
     )
     draw.text((80, 150), "Web Free", font=serif, fill="#171614")
     draw.text((80, 280), "Free online tools, no sign-up.", font=sans, fill="#0c6b4d")
-    draw.text((80, 360), "14 browser utilities on web-free.site", font=small, fill="#5f5a52")
+    draw.text((80, 360), f"{len(ALL_TOOLS)} browser utilities on web-free.site", font=small, fill="#5f5a52")
     img.save(PUBLIC / "og.png", "PNG", optimize=True)
 
     # apple touch + ico from a simple mark

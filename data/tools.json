@@ -60,6 +60,13 @@
           "name": "Free Image to Text",
           "desc_en": "Browser OCR for JPG, PNG, WebP, and PDF. English, French, and Swahili. Images never leave your device.",
           "desc_fr": "OCR dans le navigateur pour JPG, PNG, WebP et PDF. Anglais, français et swahili. Les images ne quittent pas votre appareil."
+        },
+        {
+          "slug": "free-background-remover",
+          "url": "https://free-background-remover.web-free.site/",
+          "name": "Free Background Remover",
+          "desc_en": "Remove photo backgrounds in your browser with BiRefNet. No upload, no sign-up; images stay on your device.",
+          "desc_fr": "Retirez l’arrière-plan des photos dans le navigateur avec BiRefNet. Sans envoi, sans inscription ; les images restent sur votre appareil."
         }
       ]
     },
@@ -109,6 +116,13 @@
           "name": "Free Backlink Generator",
           "desc_en": "Builds ping and analysis URLs and a directory checklist in the browser. A helper tool — not a ranking guarantee.",
           "desc_fr": "Construit des URL de ping et d’analyse, plus une checklist d’annuaires, dans le navigateur. Outil d’aide — pas une garantie de classement."
+        },
+        {
+          "slug": "free-json-formatter",
+          "url": "https://free-json-formatter.web-free.site/",
+          "name": "Free JSON Formatter",
+          "desc_en": "Format, validate, and minify JSON in your browser. No sign-up; data stays on your device.",
+          "desc_fr": "Formatez, validez et minifiez du JSON dans le navigateur. Sans inscription ; les données restent sur votre appareil."
         }
       ]
     },
@@ -130,6 +144,20 @@
           "name": "Free Fake Name Generator",
           "desc_en": "Generate fake names, emails, phones, addresses, and jobs for testing. Export CSV or JSON. Browser-only, no sign-up.",
           "desc_fr": "Générez des noms, e-mails, téléphones, adresses et métiers fictifs pour vos tests. Export CSV ou JSON. Dans le navigateur, sans inscription."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name_en": "Security & passwords",
+      "name_fr": "Sécurité et mots de passe",
+      "tools": [
+        {
+          "slug": "free-password-generator",
+          "url": "https://free-password-generator.web-free.site/",
+          "name": "Free Password Generator",
+          "desc_en": "Create strong passwords, PINs, and passphrases in your browser. No sign-up; secrets never leave your device.",
+          "desc_fr": "Créez des mots de passe robustes, des codes PIN et des phrases secrètes dans le navigateur. Sans inscription ; les secrets ne quittent pas votre appareil."
         }
       ]
     }

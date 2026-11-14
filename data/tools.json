@@ -32,6 +32,20 @@
           "name": "Free Invoice Generator",
           "desc_en": "Create professional invoices, quotes, and receipts in your browser, including RWF, FCFA, USD, and EUR. No sign-up.",
           "desc_fr": "Créez des factures, devis et reçus professionnels dans le navigateur (RWF, FCFA, USD, EUR). Sans inscription."
+        },
+        {
+          "slug": "free-typing-test",
+          "url": "https://free-typing-test.web-free.site/",
+          "name": "Free Typing Test",
+          "desc_en": "Measure WPM and accuracy in English, French (AZERTY), and Swahili, and download a PNG certificate. Runs in your browser, no sign-up.",
+          "desc_fr": "Mesurez votre vitesse (WPM) et votre précision en anglais, français (AZERTY) et swahili, et téléchargez un certificat PNG. Dans le navigateur, sans inscription."
+        },
+        {
+          "slug": "free-signature-generator",
+          "url": "https://free-signature-generator.web-free.site/",
+          "name": "Free Signature Generator",
+          "desc_en": "Draw or type a signature, download a transparent PNG, and sign PDFs in your browser. No upload, no account.",
+          "desc_fr": "Dessinez ou saisissez une signature, téléchargez un PNG transparent et signez des PDF dans le navigateur. Sans envoi, sans compte."
         }
       ]
     },

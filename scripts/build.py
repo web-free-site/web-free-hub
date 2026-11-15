@@ -224,9 +224,22 @@ def page(lang: str) -> str:
     html_out.append(
         f'      <p class="fine"><a href="{SITE}/">web-free.site</a> · <a href="/sitemap.xml">Sitemap</a></p>'
     )
+    html_out.append('      <p class="twelve-tools-badge">')
+    html_out.append(
+        '        <a href="https://twelve.tools" target="_blank">'
+        '<img src="https://twelve.tools/badge0-light.svg" '
+        'alt="Featured&#0032;on&#0032;Twelve&#0032;Tools" width="200" height="54"></a>'
+    )
+    html_out.append("      </p>")
     html_out.append("    </div>")
     html_out.append("  </footer>")
     html_out.append('  <script src="/filter.js" defer></script>')
+    html_out.append(
+        "<!-- Cloudflare Web Analytics --><script defer "
+        "src='https://static.cloudflareinsights.com/beacon.min.js' "
+        "data-cf-beacon='{\"token\": \"3e2f5f96ab32442ebb6e6f650615b58a\"}'>"
+        "</script><!-- End Cloudflare Web Analytics -->"
+    )
     html_out.append("</body>")
     html_out.append("</html>")
     html_out.append("")
@@ -256,6 +269,7 @@ def not_found() -> str:
     <p class="lede">{esc(NOT_FOUND_FR)}</p>
     <p><a class="home-link" href="/">{esc(HOME_EN)}</a> · <a class="home-link" href="/fr/">{esc(HOME_FR)}</a></p>
   </main>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3e2f5f96ab32442ebb6e6f650615b58a"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 '''
@@ -316,8 +330,8 @@ def make_og():
     draw.rectangle([0, h - 16, w, h], fill="#0c6b4d")
     serif = font(
         [
-            "/usr/share/fonts/truetype/ibm-plex/IBMPlexSerif-SemiBold.ttf",
-            "/usr/share/fonts/truetype/ibm-plex/IBMPlexSerif-Bold.ttf",
+            "/usr/share/fonts/truetype/sand-box/google/IBM Plex Serif/IBMPlexSerif-SemiBold.ttf",
+            "/usr/share/fonts/truetype/sand-box/google/IBM Plex Serif/IBMPlexSerif-Bold.ttf",
         ],
         96,
     )
@@ -345,8 +359,8 @@ def make_og():
     mdraw = ImageDraw.Draw(mark)
     wfont = font(
         [
-            "/usr/share/fonts/truetype/ibm-plex/IBMPlexSerif-Bold.ttf",
-            "/usr/share/fonts/truetype/ibm-plex/IBMPlexSerif-SemiBold.ttf",
+            "/usr/share/fonts/truetype/sand-box/google/IBM Plex Serif/IBMPlexSerif-Bold.ttf",
+            "/usr/share/fonts/truetype/sand-box/google/IBM Plex Serif/IBMPlexSerif-SemiBold.ttf",
         ],
         120,
     )

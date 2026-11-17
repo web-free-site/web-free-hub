@@ -116,6 +116,20 @@
           "name": "Free Unit Converter",
           "desc_en": "Convert length, mass, temperature, volume, and 13 other categories — 200+ units — in your browser. No sign-up.",
           "desc_fr": "Convertissez longueurs, masses, températures, volumes et 13 autres catégories — plus de 200 unités — dans le navigateur. Sans inscription."
+        },
+        {
+          "slug": "free-loan-calculator",
+          "url": "https://free-loan-calculator.web-free.site/",
+          "name": "Free Loan Calculator",
+          "desc_en": "Calculate a monthly loan payment, amortization schedule, and extra-payment savings in your browser. CSV and PDF export. No sign-up.",
+          "desc_fr": "Calculez une mensualité, un tableau d’amortissement et les économies liées aux remboursements anticipés, dans le navigateur. Export CSV et PDF. Sans inscription."
+        },
+        {
+          "slug": "free-age-calculator",
+          "url": "https://free-age-calculator.web-free.site/",
+          "name": "Free Age Calculator",
+          "desc_en": "Calculate exact age in years, months, and days, compare two dates, and get a birthday countdown in your browser. No sign-up.",
+          "desc_fr": "Calculez l’âge exact en années, mois et jours, comparez deux dates et obtenez un compte à rebours d’anniversaire, dans le navigateur. Sans inscription."
         }
       ]
     },
@@ -151,6 +165,13 @@
           "name": "Free JSON Formatter",
           "desc_en": "Format, validate, and minify JSON in your browser. No sign-up; data stays on your device.",
           "desc_fr": "Formatez, validez et minifiez du JSON dans le navigateur. Sans inscription ; les données restent sur votre appareil."
+        },
+        {
+          "slug": "free-text-to-speech",
+          "url": "https://free-text-to-speech.web-free.site/",
+          "name": "Free Text to Speech",
+          "desc_en": "Convert text to natural speech in your browser with Piper. English and French voices, speed control, and WAV download. No API key.",
+          "desc_fr": "Convertissez du texte en voix naturelle dans le navigateur avec Piper. Voix anglaises et françaises, réglage de la vitesse et téléchargement WAV. Sans clé API."
         }
       ]
     },

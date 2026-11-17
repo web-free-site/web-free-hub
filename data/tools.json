@@ -172,6 +172,27 @@
           "name": "Free Text to Speech",
           "desc_en": "Convert text to natural speech in your browser with Piper. English and French voices, speed control, and WAV download. No API key.",
           "desc_fr": "Convertissez du texte en voix naturelle dans le navigateur avec Piper. Voix anglaises et françaises, réglage de la vitesse et téléchargement WAV. Sans clé API."
+        },
+        {
+          "slug": "free-speech-to-text",
+          "url": "https://free-speech-to-text.web-free.site/",
+          "name": "Free Speech to Text",
+          "desc_en": "Transcribe audio, video, or your microphone to text in the browser with Whisper. Export TXT and SRT. English, French, and Swahili. No upload, no sign-up.",
+          "desc_fr": "Transcrivez de l’audio, une vidéo ou votre micro en texte dans le navigateur avec Whisper. Export TXT et SRT. Anglais, français et swahili. Sans envoi, sans inscription."
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name_en": "Audio & video",
+      "name_fr": "Audio et vidéo",
+      "tools": [
+        {
+          "slug": "free-video-to-mp3",
+          "url": "https://free-video-to-mp3.web-free.site/",
+          "name": "Free Video to MP3 Converter",
+          "desc_en": "Extract MP3 from local MP4, MOV, and WebM videos in your browser. No upload, no account, free.",
+          "desc_fr": "Extrayez un MP3 de vos fichiers vidéo MP4, MOV et WebM dans le navigateur. Sans envoi, sans compte, gratuit."
         }
       ]
     },

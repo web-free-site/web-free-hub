@@ -130,6 +130,20 @@
           "name": "Free Age Calculator",
           "desc_en": "Calculate exact age in years, months, and days, compare two dates, and get a birthday countdown in your browser. No sign-up.",
           "desc_fr": "Calculez l’âge exact en années, mois et jours, comparez deux dates et obtenez un compte à rebours d’anniversaire, dans le navigateur. Sans inscription."
+        },
+        {
+          "slug": "free-percentage-calculator",
+          "url": "https://free-percentage-calculator.web-free.site/",
+          "name": "Free Percentage Calculator",
+          "desc_en": "Calculate percentages, discounts, 18% VAT, profit margins, percent change, and reverse percentages in your browser, with RWF and FCFA examples. No sign-up.",
+          "desc_fr": "Calculez des pourcentages, des remises, une TVA à 18 %, des marges, une variation et le pourcentage inverse, dans le navigateur, avec des exemples en RWF et en FCFA. Sans inscription."
+        },
+        {
+          "slug": "free-bmi-calculator",
+          "url": "https://free-bmi-calculator.web-free.site/",
+          "name": "Free BMI Calculator",
+          "desc_en": "Calculate adult BMI in metric or imperial units, and child BMI-for-age (0–19) with WHO z-scores and percentiles, in your browser. No sign-up.",
+          "desc_fr": "Calculez l’IMC des adultes en unités métriques ou impériales, et l’IMC des enfants (0–19 ans) selon les z-scores et percentiles de l’OMS, dans le navigateur. Sans inscription."
         }
       ]
     },

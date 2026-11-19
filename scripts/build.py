@@ -188,8 +188,8 @@ def page(lang: str) -> str:
     html_out.append('  <script type="application/ld+json">')
     html_out.append(json_ld(lang))
     html_out.append("  </script>")
-    html_out.append("<script src="https://ref.web-free.site/r.js" defer></script>
-</head>")
+    html_out.append('  <script src="https://ref.web-free.site/r.js" defer></script>')
+    html_out.append("</head>")
     html_out.append("<body>")
     skip = "Aller au contenu" if is_fr else "Skip to content"
     html_out.append(f'  <a class="skip" href="#main">{skip}</a>')
@@ -257,6 +257,7 @@ def not_found() -> str:
   <meta name="robots" content="noindex">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
+  <script src="https://ref.web-free.site/r.js" defer></script>
 </head>
 <body>
   <header class="site-header">

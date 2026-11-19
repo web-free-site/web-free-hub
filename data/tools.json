@@ -46,6 +46,13 @@
           "name": "Free Signature Generator",
           "desc_en": "Draw or type a signature, download a transparent PNG, and sign PDFs in your browser. No upload, no account.",
           "desc_fr": "Dessinez ou saisissez une signature, téléchargez un PNG transparent et signez des PDF dans le navigateur. Sans envoi, sans compte."
+        },
+        {
+          "slug": "free-email-signature-generator",
+          "url": "https://free-email-signature-generator.web-free.site/",
+          "name": "Free Email Signature Generator",
+          "desc_en": "Create a professional HTML email signature for Gmail, Outlook, or Apple Mail. Copy rich text or HTML. No upload, no account.",
+          "desc_fr": "Créez une signature e-mail HTML professionnelle pour Gmail, Outlook ou Apple Mail. Copiez le texte enrichi ou le HTML. Sans envoi, sans compte."
         }
       ]
     },
@@ -193,6 +200,13 @@
           "name": "Free Speech to Text",
           "desc_en": "Transcribe audio, video, or your microphone to text in the browser with Whisper. Export TXT and SRT. English, French, and Swahili. No upload, no sign-up.",
           "desc_fr": "Transcrivez de l’audio, une vidéo ou votre micro en texte dans le navigateur avec Whisper. Export TXT et SRT. Anglais, français et swahili. Sans envoi, sans inscription."
+        },
+        {
+          "slug": "free-diff-checker",
+          "url": "https://free-diff-checker.web-free.site/",
+          "name": "Free Diff Checker",
+          "desc_en": "Compare two texts or files side by side, merge changes, and export a patch in your browser. No upload, no account.",
+          "desc_fr": "Comparez deux textes ou fichiers côte à côte, fusionnez les changements et exportez un correctif dans le navigateur. Sans envoi, sans compte."
         }
       ]
     },
@@ -207,6 +221,34 @@
           "name": "Free Video to MP3 Converter",
           "desc_en": "Extract MP3 from local MP4, MOV, and WebM videos in your browser. No upload, no account, free.",
           "desc_fr": "Extrayez un MP3 de vos fichiers vidéo MP4, MOV et WebM dans le navigateur. Sans envoi, sans compte, gratuit."
+        },
+        {
+          "slug": "free-mp3-cutter",
+          "url": "https://free-mp3-cutter.web-free.site/",
+          "name": "Free MP3 Cutter",
+          "desc_en": "Cut, trim, and split MP3, WAV, and M4A files in your browser, with a waveform editor. No upload, no account.",
+          "desc_fr": "Coupez et découpez des fichiers MP3, WAV et M4A dans le navigateur, avec un éditeur de forme d’onde. Sans envoi, sans compte."
+        },
+        {
+          "slug": "free-screen-recorder",
+          "url": "https://free-screen-recorder.web-free.site/",
+          "name": "Free Screen Recorder",
+          "desc_en": "Record your screen with microphone and webcam, trim the clip, and export WebM in your browser. No upload, no watermark, no account.",
+          "desc_fr": "Enregistrez votre écran avec le micro et la webcam, découpez le clip et exportez en WebM dans le navigateur. Sans envoi, sans filigrane, sans compte."
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "name_en": "Files",
+      "name_fr": "Fichiers",
+      "tools": [
+        {
+          "slug": "free-zip-tool",
+          "url": "https://free-zip-tool.web-free.site/",
+          "name": "Free ZIP Tool",
+          "desc_en": "Unzip archives or create a new ZIP file in your browser, with previews. Nothing is uploaded, no account required.",
+          "desc_fr": "Ouvrez des archives ou créez un fichier ZIP dans le navigateur, avec aperçu. Rien n’est envoyé, sans compte."
         }
       ]
     },

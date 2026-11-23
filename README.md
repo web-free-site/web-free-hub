@@ -6,7 +6,9 @@ French version: [web-free.site/fr/](https://web-free.site/fr/).
 
 ## Stack
 
-- Static HTML/CSS in `public/`, generated from `data/tools.json`
+- Static HTML/CSS in `public/`, generated from `data/tools.json`, `data/category-pages.json`, and `scripts/build.py`
+- Hub pages: home (search, categories, FAQ), category and tool detail URLs, About/Contact/Privacy/Terms
+- Reusable `public/legal-links.html` snippet for tool subdomains
 - Cloudflare Worker with static assets (`wrangler.toml`)
 - `www.web-free.site` redirects to the apex with HTTP 301
 

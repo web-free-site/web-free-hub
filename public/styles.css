@@ -299,3 +299,18 @@ h1 {
 }
 .cat-links a:hover { text-decoration: underline; }
 .directory-list .tool { grid-template-columns: 1fr; }
+
+.twelve-tools-badge {
+  margin: 0.8rem 0 0;
+}
+.twelve-tools-badge a {
+  display: inline-block;
+  line-height: 0;
+  color: inherit;
+}
+.twelve-tools-badge img {
+  display: block;
+  width: 148px;
+  height: auto;
+  opacity: 0.9;
+}

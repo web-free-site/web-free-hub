@@ -222,6 +222,11 @@ def footer_block(depth: int = 0, lang: str = "en") -> str:
         '    <div class="inner">\n'
         f"      <p>{esc(foot)}</p>\n"
         f"      {fine}\n"
+        '      <p class="twelve-tools-badge">\n'
+        '        <a href="https://twelve.tools" target="_blank">'
+        '<img src="https://twelve.tools/badge0-light.svg" '
+        'alt="Featured&#0032;on&#0032;Twelve&#0032;Tools" width="200" height="54"></a>\n'
+        "      </p>\n"
         "    </div>\n"
         "  </footer>\n"
     )

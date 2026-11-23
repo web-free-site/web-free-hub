@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "slug": "text-writing",
+      "title": "Free document & writing tools",
+      "category_ids": ["documents"],
+      "intro": "Whether you are drafting a resume, counting words for an essay, or building a professional invoice, browser-based writing tools save time because nothing installs on your computer. The Web Free document and writing category groups utilities that help with everyday text work: PDF editing, CV layout, signatures, typing practice, and billing documents.\n\nEvery tool in this category is designed to run without an account. Most processing happens locally in your browser, which keeps drafts and personal details off remote servers when the tool supports it. That matters for CVs, contracts, and invoices where you may not want copies stored on someone else's cloud.\n\nUse the cards below to open any tool on its own subdomain. Each page explains what the utility does, how to use it, and how your data is handled. You can also browse the full hub search or jump to image, calculator, or developer categories when your task crosses into another area."
+    },
+    {
+      "slug": "image",
+      "title": "Free image & QR tools",
+      "category_ids": ["images"],
+      "intro": "Photos, QR codes, memes, and logos often need quick edits before you share or print them. The Web Free image category collects browser utilities for resizing, compressing, converting formats, removing backgrounds, upscaling, and creating visual assets without desktop software.\n\nMany of these tools keep your files on your device while work runs in the tab. That is useful on shared computers, when uploads are slow, or when you simply do not want images sent to a third-party server. Check each tool's privacy note on its detail page for specifics.\n\nQR and barcode creation lives here too, alongside OCR that pulls text from pictures. If your task involves sound or video instead, see the audio and video categories. Calculators and document tools are linked from the hub footer when you need something else."
+    },
+    {
+      "slug": "calculators",
+      "title": "Free calculators & converters",
+      "category_ids": ["calc"],
+      "intro": "From currency and units to loans, BMI, and percentages, quick number work belongs in the browser when you do not want another app open. Web Free calculators run instantly, work offline where noted, and skip registration entirely.\n\nThe currency tool pulls live rates for RWF, CFA, and many other codes useful across Africa and worldwide. Loan and percentage calculators help with budgets, VAT-style math, and business margins. Unit conversion covers length, mass, temperature, volume, and more in one place.\n\nNone of these utilities replace professional financial or medical advice. They give fast estimates and tables you can export when a tool supports CSV or PDF output. Open any card below, or return to the hub to search all fifty free tools by name."
+    },
+    {
+      "slug": "developer",
+      "title": "Free developer & text utilities",
+      "category_ids": ["seo"],
+      "intro": "Developers, writers, and marketers often need small helpers: format JSON, compare two files, generate citations, or draft SEO meta tags. The Web Free developer category bundles these text-centric utilities so you can finish micro-tasks without leaving the browser.\n\nSeveral tools here process content entirely on your device. JSON formatting, diff checking, and citation building are typical examples where your paste or upload is not meant for long-term storage on our servers. Speech and text tools may load local models in the tab; read each tool page for its privacy details.\n\nSEO and backlink helpers produce markup and checklists—they do not guarantee search rankings. Use them as starting points alongside your own site strategy. Related image, audio, and document tools are one click away from the hub navigation."
+    },
+    {
+      "slug": "video",
+      "title": "Free video tools",
+      "category_ids": ["media"],
+      "tool_slugs": [
+        "free-video-to-mp3",
+        "free-screen-recorder",
+        "free-video-compressor",
+        "free-video-to-gif",
+        "free-video-converter"
+      ],
+      "intro": "Compressing a clip for messaging, recording your screen, or converting formats should not require paid software for simple jobs. Web Free video tools handle common tasks in the browser: extract audio tracks, trim and export, shrink file size, build GIFs, and convert containers to MP4.\n\nBecause video files can be large, local processing avoids upload queues and keeps footage on your machine when the tool works client-side. That reduces waiting time and limits how many copies of your content exist online.\n\nPair these utilities with the audio tools category for MP3 cutting and format conversion, or use the image category when you need a thumbnail or meme from a still frame. Every tool opens on its own subdomain with a clear privacy note on its hub detail page."
+    },
+    {
+      "slug": "audio",
+      "title": "Free audio tools",
+      "category_ids": ["media"],
+      "tool_slugs": [
+        "free-mp3-cutter",
+        "free-audio-converter"
+      ],
+      "intro": "Cutting a podcast clip, converting FLAC to MP3, or exporting audio from a home video are everyday jobs that fit well in lightweight browser tools. This category lists Web Free utilities focused on sound files rather than full video workflows.\n\nAudio processing can stay on your device for supported formats, which helps when files are long or sensitive. Waveform editors and converters in this group are built for quick edits—not for replacing a full digital audio workstation.\n\nFor extracting sound from video containers, use the video category's MP3 converter. Speech-to-text and text-to-speech helpers live under developer tools when you need transcription or narration. All listings link out to live tools with ?ref=hub on the hub for attribution."
+    },
+    {
+      "slug": "utilities",
+      "title": "Free file, security & time utilities",
+      "category_ids": ["files", "security", "time"],
+      "intro": "Not every task fits a single theme. This utilities category gathers ZIP archives, strong passwords, and time-zone planning—small but essential tools you might open once a week or once a year.\n\nThe ZIP tool unpacks or builds archives with previews while data stays in the browser when supported. The password generator creates secrets that never leave your device. The time-zone converter helps schedule calls across regions without mental math.\n\nEach utility is free, requires no signup, and runs on its own subdomain. Browse generators for fake test data, or design tools for whiteboard sketching, when your next step is different. The hub footer links privacy and terms that apply across the whole web-free.site network."
+    },
+    {
+      "slug": "generators",
+      "title": "Free generators & pickers",
+      "category_ids": ["testdata", "random"],
+      "intro": "Testing forms, demos, and games often needs placeholder people, addresses, or a random choice. Web Free generators create fake names and addresses for QA work, plus a spin wheel for giveaways and classroom picks.\n\nFake data tools are for development and education—not for fraud or impersonation. Output is random and client-side where noted, so you control exports in CSV or JSON format.\n\nWhen you need passwords instead of personas, see the utilities category. Document and image tools handle the next step once your test content exists. Open any tool below for step-by-step instructions and feature lists on its dedicated hub page."
+    },
+    {
+      "slug": "design",
+      "title": "Free design & drawing tools",
+      "category_ids": ["drawing"],
+      "intro": "Simple design work—sketching on a whiteboard, mocking a layout, or exporting a quick PNG—does not always belong in heavy creative suites. Web Free design tools cover collaborative whiteboard drawing with export options.\n\nLogo, color, and meme utilities live in the image category when your task is photo or brand focused. The whiteboard here is for freehand notes, diagrams, and teaching moments in the browser.\n\nFiles save to your device when you download; no account is required. Link back to the hub to discover PDF, image, and video tools for the rest of your project. Network-wide privacy and terms are published on web-free.site for every subdomain."
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 
   var empty = document.getElementById("no-results");
   var sections = document.querySelectorAll("section.category");
+  var directory = document.querySelector(".directory-list");
   var tocLinks = document.querySelectorAll(".toc a[data-cat]");
   var form = input.form;
 
@@ -31,6 +32,14 @@
         if (a.getAttribute("data-cat") === sec.id) a.hidden = n === 0;
       });
     });
+    if (directory) {
+      directory.querySelectorAll("li.hub-search-item, li.tool").forEach(function (li) {
+        var hay = li.getAttribute("data-search") || li.textContent;
+        var match = !q || norm(hay).indexOf(q) !== -1;
+        li.hidden = !match;
+        if (match) shown += 1;
+      });
+    }
     if (empty) empty.hidden = shown > 0;
   }
 

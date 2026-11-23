@@ -6,9 +6,6 @@
   <title>Web Free — Outils en ligne gratuits</title>
   <meta name="description" content="Annuaire d’outils en ligne gratuits sur web-free.site : PDF, CV, devises, QR codes, images, factures et plus. Sans inscription.">
   <link rel="canonical" href="https://web-free.site/fr/">
-  <link rel="alternate" hreflang="en" href="https://web-free.site/">
-  <link rel="alternate" hreflang="fr" href="https://web-free.site/fr/">
-  <link rel="alternate" hreflang="x-default" href="https://web-free.site/">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Web Free">
@@ -18,8 +15,6 @@
   <meta property="og:image" content="https://web-free.site/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Web Free — Outils en ligne gratuits">
   <meta name="twitter:description" content="Annuaire d’outils en ligne gratuits sur web-free.site : PDF, CV, devises, QR codes, images, factures et plus. Sans inscription.">
@@ -406,9 +401,10 @@
   <header class="site-header">
     <div class="inner">
       <a class="wordmark" href="/fr/">Web <span>Free</span></a>
-      <nav aria-label="Langue"><a href="/" lang="en" hreflang="en">English</a></nav>
+      <nav class="site-nav" aria-label="Langue"> <a href="/">English</a></nav>
     </div>
   </header>
+
   <main id="main">
     <section class="hero">
       <p class="kicker">50 outils gratuits</p>
@@ -430,7 +426,7 @@
     </nav>
     <form class="filter" role="search" action="#" method="get">
       <label for="tool-filter">Filtrer les outils</label>
-      <input id="tool-filter" type="search" name="q" placeholder="Rechercher un outil…" autocomplete="off" enterkeyhint="search">
+      <input id="tool-filter" type="search" name="q" placeholder="Rechercher un outil…" autocomplete="off">
     </form>
     <p id="no-results" hidden>Aucun outil ne correspond à cette recherche.</p>
   <section class="category" id="documents" aria-labelledby="h-documents">
@@ -692,13 +688,11 @@
   <footer class="site-footer">
     <div class="inner">
       <p>Tous les outils listés ici sont gratuits et s’utilisent dans le navigateur. Cette page renvoie vers chaque utilitaire en ligne sur web-free.site.</p>
-      <p class="fine"><a href="https://web-free.site/">web-free.site</a> · <a href="/sitemap.xml">Sitemap</a></p>
-      <p class="twelve-tools-badge">
-        <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge0-light.svg" alt="Featured&#0032;on&#0032;Twelve&#0032;Tools" width="200" height="54"></a>
-      </p>
+      <p class="fine"><a href="https://web-free.site/">web-free.site</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></p>
     </div>
   </footer>
+
   <script src="/filter.js" defer></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e2f5f96ab32442ebb6e6f650615b58a"}'></script><!-- End Cloudflare Web Analytics -->
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e2f5f96ab32442ebb6e6f650615b58a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

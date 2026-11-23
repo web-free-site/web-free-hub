@@ -75,6 +75,17 @@ CF_BEACON = (
     "</script><!-- End Cloudflare Web Analytics -->"
 )
 REF_JS = '<script src="https://ref.web-free.site/r.js" defer></script>'
+GA_MEASUREMENT_ID = "G-8DG5MK8YPM"
+GTAG = (
+    "<!-- Google tag (gtag.js) -->"
+    f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>'
+    "<script>"
+    "window.dataLayer = window.dataLayer || [];"
+    "function gtag(){dataLayer.push(arguments);}"
+    "gtag('js', new Date());"
+    f"gtag('config', '{GA_MEASUREMENT_ID}');"
+    "</script>"
+)
 
 ALL_TOOLS: list[dict] = []
 TOOL_BY_SLUG: dict[str, dict] = {}
@@ -158,6 +169,7 @@ def head_block(
         lines.append('  <script type="application/ld+json">')
         lines.append(extra_json_ld)
         lines.append("  </script>")
+    lines.append(f"  {GTAG}")
     lines.append(f"  {REF_JS}")
     lines.append("</head>")
     return "\n".join(lines)
@@ -819,6 +831,7 @@ def not_found() -> str:
   <meta name="robots" content="noindex">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
+  {GTAG}
   {REF_JS}
 </head>
 <body>

@@ -95,6 +95,34 @@
           "name": "Free Image Compressor",
           "desc_en": "Compress and convert JPG, PNG, WebP, and AVIF in your browser. Batch queue and ZIP download. No upload, no sign-up.",
           "desc_fr": "Compressez et convertissez des JPG, PNG, WebP et AVIF dans le navigateur. File d’attente et téléchargement ZIP. Sans envoi, sans inscription."
+        },
+        {
+          "slug": "free-heic-to-jpg",
+          "url": "https://free-heic-to-jpg.web-free.site/",
+          "name": "Free HEIC to JPG Converter",
+          "desc_en": "Convert HEIC and HEIF photos to JPG in your browser. No upload, no sign-up; images stay on your device.",
+          "desc_fr": "Convertissez des photos HEIC et HEIF en JPG dans le navigateur. Sans envoi, sans inscription ; les images restent sur votre appareil."
+        },
+        {
+          "slug": "free-image-upscaler",
+          "url": "https://free-image-upscaler.web-free.site/",
+          "name": "Free Image Upscaler",
+          "desc_en": "Upscale photos and anime (×2 / ×4) in your browser with Real-ESRGAN. No upload, no sign-up.",
+          "desc_fr": "Agrandissez des photos et des images anime (×2 / ×4) dans le navigateur avec Real-ESRGAN. Sans envoi, sans inscription."
+        },
+        {
+          "slug": "free-passport-photo-maker",
+          "url": "https://free-passport-photo-maker.web-free.site/",
+          "name": "Free Passport Photo Maker",
+          "desc_en": "Make a passport or ID photo in your browser, with official sizes and a print sheet. No upload, no watermark, no account.",
+          "desc_fr": "Créez une photo de passeport ou de pièce d’identité dans le navigateur, aux formats officiels, avec une planche d’impression. Sans envoi, sans filigrane, sans compte."
+        },
+        {
+          "slug": "free-png-to-svg",
+          "url": "https://free-png-to-svg.web-free.site/",
+          "name": "Free PNG to SVG Converter",
+          "desc_en": "Convert PNG and other raster images to SVG in your browser. No upload, no sign-up; images stay on your device.",
+          "desc_fr": "Convertissez des PNG et d’autres images bitmap en SVG dans le navigateur. Sans envoi, sans inscription ; les images restent sur votre appareil."
         }
       ]
     },
@@ -235,6 +263,27 @@
           "name": "Free Screen Recorder",
           "desc_en": "Record your screen with microphone and webcam, trim the clip, and export WebM in your browser. No upload, no watermark, no account.",
           "desc_fr": "Enregistrez votre écran avec le micro et la webcam, découpez le clip et exportez en WebM dans le navigateur. Sans envoi, sans filigrane, sans compte."
+        },
+        {
+          "slug": "free-video-compressor",
+          "url": "https://free-video-compressor.web-free.site/",
+          "name": "Free Video Compressor",
+          "desc_en": "Compress MP4 and other videos in your browser for WhatsApp, email, or a 25 MB limit. No upload, no sign-up.",
+          "desc_fr": "Compressez des vidéos MP4 et autres dans le navigateur pour WhatsApp, l’e-mail ou une limite de 25 Mo. Sans envoi, sans inscription."
+        },
+        {
+          "slug": "free-video-to-gif",
+          "url": "https://free-video-to-gif.web-free.site/",
+          "name": "Free Video to GIF Converter",
+          "desc_en": "Convert local MP4, WebM, and MOV files to GIF in your browser. No upload, no account.",
+          "desc_fr": "Convertissez des fichiers MP4, WebM et MOV en GIF dans le navigateur. Sans envoi, sans compte."
+        },
+        {
+          "slug": "free-audio-converter",
+          "url": "https://free-audio-converter.web-free.site/",
+          "name": "Free Audio Converter",
+          "desc_en": "Convert OPUS, OGG, M4A, WAV, AAC, and MP3 in your browser. No upload, no account, free.",
+          "desc_fr": "Convertissez des fichiers OPUS, OGG, M4A, WAV, AAC et MP3 dans le navigateur. Sans envoi, sans compte, gratuit."
         }
       ]
     },

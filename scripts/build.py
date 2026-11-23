@@ -129,13 +129,16 @@ def page(lang: str) -> str:
         for tool in cat["tools"]:
             tdesc = tool["desc_fr"] if is_fr else tool["desc_en"]
             hay = f"{tool['name']} {tdesc}"
+            href = tool["url"]
+            if "ref=" not in href:
+                href = href + ("&" if "?" in href else "?") + ("ref=hub-fr" if is_fr else "ref=hub")
             rows.append(
                 "      <li class=\"tool\" data-search=\"{hay}\">\n"
                 "        <a href=\"{url}\">{name}</a>\n"
                 "        <span class=\"desc\">{desc}</span>\n"
                 "      </li>".format(
                     hay=esc(hay),
-                    url=esc(tool["url"]),
+                    url=esc(href),
                     name=esc(tool["name"]),
                     desc=esc(tdesc),
                 )

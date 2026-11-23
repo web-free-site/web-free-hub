@@ -123,6 +123,41 @@
           "name": "Free PNG to SVG Converter",
           "desc_en": "Convert PNG and other raster images to SVG in your browser. No upload, no sign-up; images stay on your device.",
           "desc_fr": "Convertissez des PNG et d’autres images bitmap en SVG dans le navigateur. Sans envoi, sans inscription ; les images restent sur votre appareil."
+        },
+        {
+          "slug": "free-meme-generator",
+          "url": "https://free-meme-generator.web-free.site/",
+          "name": "Free Meme Generator",
+          "desc_en": "Make memes from templates or your own photos in your browser, then download the image. No sign-up.",
+          "desc_fr": "Créez des mèmes à partir de modèles ou de vos photos dans le navigateur, puis téléchargez l’image. Sans inscription."
+        },
+        {
+          "slug": "free-color-picker",
+          "url": "https://free-color-picker.web-free.site/",
+          "name": "Free Color Picker",
+          "desc_en": "Pick colors from an image or palette and copy HEX, RGB, or HSL in your browser. No sign-up.",
+          "desc_fr": "Prélevez des couleurs sur une image ou une palette et copiez le HEX, le RGB ou le HSL dans le navigateur. Sans inscription."
+        },
+        {
+          "slug": "free-gif-maker",
+          "url": "https://free-gif-maker.web-free.site/",
+          "name": "Free GIF Maker",
+          "desc_en": "Turn still images into an animated GIF in your browser. Files stay on your device. No sign-up.",
+          "desc_fr": "Transformez des images en GIF animé dans le navigateur. Les fichiers restent sur votre appareil. Sans inscription."
+        },
+        {
+          "slug": "free-photo-editor",
+          "url": "https://free-photo-editor.web-free.site/",
+          "name": "Free Photo Editor",
+          "desc_en": "Crop, rotate, and filter photos in your browser. Nothing is uploaded. No sign-up.",
+          "desc_fr": "Recadrez, pivotez et filtrez des photos dans le navigateur. Rien n’est envoyé. Sans inscription."
+        },
+        {
+          "slug": "free-logo-maker",
+          "url": "https://free-logo-maker.web-free.site/",
+          "name": "Free Logo Maker",
+          "desc_en": "Design a text logo with fonts and colors, then download PNG or SVG in your browser. No sign-up.",
+          "desc_fr": "Concevez un logo typographique, puis téléchargez-le en PNG ou SVG dans le navigateur. Sans inscription."
         }
       ]
     },
@@ -235,6 +270,13 @@
           "name": "Free Diff Checker",
           "desc_en": "Compare two texts or files side by side, merge changes, and export a patch in your browser. No upload, no account.",
           "desc_fr": "Comparez deux textes ou fichiers côte à côte, fusionnez les changements et exportez un correctif dans le navigateur. Sans envoi, sans compte."
+        },
+        {
+          "slug": "free-citation-generator",
+          "url": "https://free-citation-generator.web-free.site/",
+          "name": "Free Citation Generator",
+          "desc_en": "Create APA, MLA, Chicago, IEEE, and BibTeX citations in your browser. Paste a DOI, ISBN, or URL. No sign-up.",
+          "desc_fr": "Créez des citations APA, MLA, Chicago, IEEE et BibTeX dans le navigateur. Collez un DOI, un ISBN ou une URL. Sans inscription."
         }
       ]
     },
@@ -284,6 +326,13 @@
           "name": "Free Audio Converter",
           "desc_en": "Convert OPUS, OGG, M4A, WAV, AAC, and MP3 in your browser. No upload, no account, free.",
           "desc_fr": "Convertissez des fichiers OPUS, OGG, M4A, WAV, AAC et MP3 dans le navigateur. Sans envoi, sans compte, gratuit."
+        },
+        {
+          "slug": "free-video-converter",
+          "url": "https://free-video-converter.web-free.site/",
+          "name": "Free Video Converter",
+          "desc_en": "Convert MOV, MKV, WebM, and AVI to MP4 in your browser. No upload, no account.",
+          "desc_fr": "Convertissez des fichiers MOV, MKV, WebM et AVI en MP4 dans le navigateur. Sans envoi, sans compte."
         }
       ]
     },
@@ -333,6 +382,48 @@
           "name": "Free Password Generator",
           "desc_en": "Create strong passwords, PINs, and passphrases in your browser. No sign-up; secrets never leave your device.",
           "desc_fr": "Créez des mots de passe robustes, des codes PIN et des phrases secrètes dans le navigateur. Sans inscription ; les secrets ne quittent pas votre appareil."
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name_en": "Time",
+      "name_fr": "Temps",
+      "tools": [
+        {
+          "slug": "free-time-zone-converter",
+          "url": "https://free-time-zone-converter.web-free.site/",
+          "name": "Free Time Zone Converter",
+          "desc_en": "Convert times between time zones, check world clocks, and plan meetings in your browser. No sign-up.",
+          "desc_fr": "Convertissez les heures entre fuseaux horaires, consultez les horloges mondiales et planifiez des réunions dans le navigateur. Sans inscription."
+        }
+      ]
+    },
+    {
+      "id": "drawing",
+      "name_en": "Drawing",
+      "name_fr": "Dessin",
+      "tools": [
+        {
+          "slug": "free-whiteboard",
+          "url": "https://free-whiteboard.web-free.site/",
+          "name": "Free Whiteboard",
+          "desc_en": "Draw on an online whiteboard in your browser and export PNG or SVG. No sign-up.",
+          "desc_fr": "Dessinez sur un tableau blanc en ligne dans le navigateur et exportez en PNG ou SVG. Sans inscription."
+        }
+      ]
+    },
+    {
+      "id": "random",
+      "name_en": "Random & pickers",
+      "name_fr": "Hasard et tirages",
+      "tools": [
+        {
+          "slug": "free-spin-wheel",
+          "url": "https://free-spin-wheel.web-free.site/",
+          "name": "Free Spin Wheel",
+          "desc_en": "Spin a wheel of names or a yes-or-no wheel in your browser. No sign-up.",
+          "desc_fr": "Faites tourner une roue de noms ou une roue oui/non dans le navigateur. Sans inscription."
         }
       ]
     }

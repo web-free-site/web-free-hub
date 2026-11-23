@@ -222,6 +222,8 @@ def footer_block(depth: int = 0, lang: str = "en") -> str:
         '    <div class="inner">\n'
         f"      <p>{esc(foot)}</p>\n"
         f"      {fine}\n"
+        '      <p class="founded-by">Founded by '
+        '<a href="https://gentil.quevvy.com" rel="author">Gentil M.</a></p>\n'
         '      <p class="twelve-tools-badge">\n'
         '        <a href="https://twelve.tools" target="_blank">'
         '<img src="https://twelve.tools/badge0-light.svg" '
@@ -378,6 +380,16 @@ def homepage_en() -> str:
                 "url": SITE + "/",
                 "description": DESC_EN,
                 "inLanguage": "en",
+            },
+            {
+                "@type": "Organization",
+                "name": "Web Free",
+                "url": SITE + "/",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Gentil M.",
+                    "url": "https://gentil.quevvy.com",
+                },
             },
             {"@type": "ItemList", "name": "Free online tools", "numberOfItems": len(ALL_TOOLS), "itemListElement": items},
             json.loads(faq_ld(HOME_FAQ)),
@@ -984,7 +996,12 @@ def main() -> None:
             h1="About Web Free",
             description="What the web-free.site hub is, how the tool network works, and how we list free browser utilities.",
             path="about",
-            body_html="<p>" + esc(ABOUT_BODY).replace("\n\n", "</p><p>") + "</p>",
+            body_html=(
+                "<p>" + esc(ABOUT_BODY).replace("\n\n", "</p><p>") + "</p>"
+                "<p>web-free.site was founded by "
+                '<a href="https://gentil.quevvy.com" rel="author">Gentil M.</a>, '
+                "a full-stack developer based in Kigali, Rwanda.</p>"
+            ),
         ),
         encoding="utf-8",
     )

@@ -1,0 +1,10 @@
+--- a/README.md
++++ b/README.md
+@@ -25,6 +25,10 @@
+ - [Web App](https://github.com/gokulkrishh/qrcodescan.in) - A progressive web application to scan QR codes.
+ 
++### Generators
++
++- [Free QR Code Creator](https://free-qr-code-creator.web-free.site/?ref=awesome-qr-code) - Create styled QR codes and barcodes in the browser, with no sign-up.
++
+ ### File Transfer

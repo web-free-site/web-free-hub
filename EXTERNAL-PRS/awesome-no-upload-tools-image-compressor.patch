@@ -1,0 +1,8 @@
+--- a/README.md
++++ b/README.md
+@@ -48,6 +48,7 @@
+ - [Cromagnon image compressor](https://cromagnon.app/tools/image-compressor), [converter](https://cromagnon.app/tools/image-converter) and [favicon generator](https://cromagnon.app/tools/favicon-generator): single-job image tools.
+ - [Quick Image Kit](https://quickimagekit.com): compress toward a target KB size, resize, convert, crop and generate favicons in the browser; its privacy policy says image files are not uploaded to an application server.
++- [Free Image Compressor](https://free-image-compressor.web-free.site/?ref=awesome-no-upload-tools): compress and convert JPG, PNG, WebP, and AVIF in the browser with batch queue and ZIP download. [Privacy policy](https://web-free.site/privacy/).
+
+<!-- PR body: Proof https://web-free.site/tools/free-image-compressor/ · Exceptions: none noted for compress · Check: offline re-run after first load where possible -->

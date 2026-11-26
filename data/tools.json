@@ -226,7 +226,7 @@
           "slug": "free-ai-humanizer",
           "url": "https://free-ai-humanizer.web-free.site/",
           "name": "Free AI Humanizer",
-          "desc_en": "Rewrite AI-generated text with a more natural tone in your browser. No API key.",
+          "desc_en": "Rewrite AI-generated text with a more natural tone in your browser. No API key or sign-up.",
           "desc_fr": "Réécrivez un texte généré par IA avec un ton plus naturel, dans le navigateur. Sans clé API."
         },
         {
@@ -240,7 +240,7 @@
           "slug": "free-backlink-generator",
           "url": "https://free-backlink-generator.web-free.site/",
           "name": "Free Backlink Generator",
-          "desc_en": "Builds ping and analysis URLs and a directory checklist in the browser. A helper tool — not a ranking guarantee.",
+          "desc_en": "Build SEO ping URLs and a directory checklist in your browser. Helper for discovery work—not a ranking guarantee.",
           "desc_fr": "Construit des URL de ping et d’analyse, plus une checklist d’annuaires, dans le navigateur. Outil d’aide — pas une garantie de classement."
         },
         {

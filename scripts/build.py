@@ -31,6 +31,9 @@ CAT_PAGES = json.loads((ROOT / "data/category-pages.json").read_text(encoding="u
     "pages"
 ]
 GUIDES_DATA = json.loads((ROOT / "data/guides.json").read_text(encoding="utf-8"))["guides"]
+_batch3 = ROOT / "data/guides-batch3.json"
+if _batch3.exists():
+    GUIDES_DATA.extend(json.loads(_batch3.read_text(encoding="utf-8"))["guides"])
 PUBLIC = ROOT / "public"
 
 SITE = "https://web-free.site"
@@ -116,9 +119,16 @@ for page in CAT_PAGES:
 
 GUIDE_BY_SLUG: dict[str, dict] = {g["slug"]: g for g in GUIDES_DATA}
 GUIDES_BY_CATEGORY: dict[str, list[dict]] = {}
+GUIDES_BY_TOOL: dict[str, list[dict]] = {}
 for g in GUIDES_DATA:
     for cs in g.get("category_slugs", []):
         GUIDES_BY_CATEGORY.setdefault(cs, []).append(g)
+    for ts in g.get("tool_slugs", [g["tool_slug"]]):
+        GUIDES_BY_TOOL.setdefault(ts, []).append(g)
+
+
+def guide_tool_slugs(guide: dict) -> list[str]:
+    return guide.get("tool_slugs") or [guide["tool_slug"]]
 
 
 def esc(s: str) -> str:
@@ -627,6 +637,22 @@ def tool_page(tool: dict) -> str:
             f'        <a class="card tool-card" href="/tools/{esc(r["slug"])}/">{esc(r["name"])}</a>'
         )
 
+    tool_guide_cards = []
+    for g in GUIDES_BY_TOOL.get(slug, []):
+        tool_guide_cards.append(
+            f'        <a class="card tool-card" href="/guides/{esc(g["slug"])}/">{esc(g["title"])}</a>'
+        )
+    tool_guides_section: list[str] = []
+    if tool_guide_cards:
+        tool_guides_section = [
+            '    <section class="panel" aria-labelledby="h-toolguides">',
+            '      <h2 id="h-toolguides">Related guides</h2>',
+            '      <div class="card-grid">',
+            *tool_guide_cards,
+            "      </div>",
+            "    </section>",
+        ]
+
     faq_section: list[str] = []
     if tool_qas:
         faq_items = []
@@ -676,6 +702,7 @@ def tool_page(tool: dict) -> str:
             hub_links,
             "    </section>",
             *faq_section,
+            *tool_guides_section,
             '    <section class="panel" aria-labelledby="h-related">',
             '      <h2 id="h-related">Related tools</h2>',
             '      <div class="card-grid">',
@@ -711,11 +738,31 @@ def guide_page(guide: dict) -> str:
     crumbs_html += f'<span>{esc(guide["title"])}</span></nav>'
 
     short = re.sub(r"^Free ", "", tool["name"])
+    is_comparison = guide.get("type") == "comparison"
     steps = guide.get("steps", [])
     sections_html = []
     for sec in guide.get("sections", []):
         sections_html.append(f"      <h2>{esc(sec['heading'])}</h2>")
         sections_html.append(f"      <p>{esc(sec['body'])}</p>")
+
+    comparison_html: list[str] = []
+    points = guide.get("comparison_points") or []
+    if points:
+        comparison_html = [
+            "      <h2>At a glance</h2>",
+            '      <table class="cmp-table">',
+            "        <thead><tr><th scope=\"col\">Topic</th><th scope=\"col\">Web Free</th><th scope=\"col\">Typical alternative</th></tr></thead>",
+            "        <tbody>",
+        ]
+        for row in points:
+            comparison_html.append(
+                "          <tr>"
+                f"<th scope=\"row\">{esc(row[0])}</th>"
+                f"<td>{esc(row[1])}</td>"
+                f"<td>{esc(row[2])}</td>"
+                "</tr>"
+            )
+        comparison_html += ["        </tbody>", "      </table>"]
 
     faq = guide.get("faq", [])
     faq_html = []
@@ -724,10 +771,19 @@ def guide_page(guide: dict) -> str:
             f'      <details class="faq-item"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>'
         )
 
-    howto_ld = {
-        "@context": "https://schema.org",
-        "@graph": [
-            json.loads(breadcrumbs_ld(crumbs)),
+    graph_nodes: list = [json.loads(breadcrumbs_ld(crumbs))]
+    if is_comparison:
+        graph_nodes.append(
+            {
+                "@type": "Article",
+                "headline": guide["title"],
+                "description": meta,
+                "inLanguage": "en",
+                "author": {"@type": "Organization", "name": "Web Free"},
+            }
+        )
+    else:
+        graph_nodes.append(
             {
                 "@type": "HowTo",
                 "name": guide["title"],
@@ -736,12 +792,11 @@ def guide_page(guide: dict) -> str:
                     {"@type": "HowToStep", "position": i, "text": s}
                     for i, s in enumerate(steps, start=1)
                 ],
-            },
-        ],
-    }
+            }
+        )
     if faq:
-        howto_ld["@graph"].append(json.loads(faq_ld([(q, a) for q, a in faq])))
-    extra_ld = json.dumps(howto_ld, ensure_ascii=False, indent=2)
+        graph_nodes.append(json.loads(faq_ld([(q, a) for q, a in faq])))
+    extra_ld = json.dumps({"@context": "https://schema.org", "@graph": graph_nodes}, ensure_ascii=False, indent=2)
 
     related = GUIDES_BY_CATEGORY.get(cat_slug, [])
     related_links = []
@@ -771,11 +826,18 @@ def guide_page(guide: dict) -> str:
             f'      <a class="btn" href="/category/{esc(cat_slug)}/">{esc(cat_page["title"])}</a>',
             "</p>",
             '    <section class="prose">',
-            "      <h2>Steps</h2>",
-            "      <ol>",
-            *[f"        <li>{esc(s)}</li>" for s in steps],
-            "      </ol>",
+            *(
+                [
+                    "      <h2>Steps</h2>",
+                    "      <ol>",
+                    *[f"        <li>{esc(s)}</li>" for s in steps],
+                    "      </ol>",
+                ]
+                if steps and not is_comparison
+                else []
+            ),
             *sections_html,
+            *comparison_html,
             f"      <p>Tool: <a href=\"/tools/{esc(tool['slug'])}/\">{esc(tool['name'])}</a> · "
             f'<a href="{esc(tool_href_guide(tool))}">Open live tool</a>.</p>',
             "    </section>",
@@ -806,11 +868,12 @@ def guides_index_page() -> str:
     cards = []
     for g in GUIDES_DATA:
         tool = TOOL_BY_SLUG[g["tool_slug"]]
+        kind = "Comparison" if g.get("type") == "comparison" else "How-to"
         cards.append(
             f'      <a class="card tool-card" href="/guides/{esc(g["slug"])}/">'
             f"<strong>{esc(g['title'])}</strong>"
             f'<span>{esc(g["meta_description"][:120])}…</span>'
-            f'<span class="desc">Tool: {esc(tool["name"])}</span></a>'
+            f'<span class="desc">{esc(kind)} · {esc(tool["name"])}</span></a>'
         )
     return "\n".join(
         [

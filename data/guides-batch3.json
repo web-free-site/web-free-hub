@@ -1,0 +1,497 @@
+{
+  "guides": [
+    {
+      "slug": "build-ats-cv-pdf-free-online",
+      "title": "Build an ATS-friendly CV PDF free online",
+      "meta_description": "Create a resume that parses in applicant tracking systems and export PDF in your browser. Free CV maker on web-free.site—no account.",
+      "tool_slug": "free-cv-maker",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Open Free CV Maker and pick a simple, single-column template.",
+        "Fill contact details, experience, and education in plain text—avoid tables inside skills.",
+        "Use standard headings (Experience, Education) so parsers recognize sections.",
+        "Export PDF and open it in a viewer to confirm text is selectable, not a flat image."
+      ],
+      "sections": [
+        {
+          "heading": "What ATS systems read",
+          "body": "Many employers run CVs through software before a human sees them. Clean structure and selectable text beat decorative layouts. Web Free’s CV tool focuses on exportable PDF rather than flashy design."
+        },
+        {
+          "heading": "After export",
+          "body": "Tailor keywords to the job description honestly. Proofread dates and titles; parsers cannot fix typos that confuse recruiters."
+        }
+      ],
+      "faq": [
+        ["Do I need an account?", "No account is required on the hub listing."],
+        ["Can I edit later?", "Reopen the tool, update content, and export a fresh PDF."]
+      ]
+    },
+    {
+      "slug": "create-invoice-pdf-rwf-fcfa-free",
+      "title": "Create an invoice PDF with RWF, FCFA, or USD free",
+      "meta_description": "Professional invoices and quotes in your browser with African and global currencies. Free invoice generator—no sign-up.",
+      "tool_slug": "free-invoice-generator",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Open Free Invoice Generator and enter your business name and client details.",
+        "Add line items, tax, and choose currency (RWF, FCFA, USD, EUR, etc.).",
+        "Preview totals and export PDF.",
+        "Save a copy for your records and send the PDF over email."
+      ],
+      "sections": [
+        {
+          "heading": "Freelancers across regions",
+          "body": "Cross-border work often needs CFA franc, Rwandan franc, or dollar quotes on the same day. A browser invoice tool avoids installing accounting software for one-off bills."
+        }
+      ],
+      "faq": [
+        ["Is this accounting software?", "No—it produces documents; keep books in your chosen system."],
+        ["Are rates stored?", "Check the live tool; typical use stays in the session."]
+      ]
+    },
+    {
+      "slug": "resize-image-for-website-dimensions",
+      "title": "Resize images for website dimensions without uploading",
+      "meta_description": "Resize, crop, and export JPG or WebP in your browser. Free image resizer on web-free.site.",
+      "tool_slug": "free-image-resizer",
+      "category_slugs": ["image"],
+      "steps": [
+        "Open Free Image Resizer and load your source photo.",
+        "Enter target width and height or pick a preset for hero, thumbnail, or social.",
+        "Preview the crop and adjust aspect ratio if needed.",
+        "Download and run through Free Image Compressor if file size is still large."
+      ],
+      "sections": [
+        {
+          "heading": "Pixels you do not need",
+          "body": "Uploading a 4000 px camera frame to a 600 px blog slot wastes bandwidth. Resize first, then compress."
+        }
+      ],
+      "faq": [
+        ["Does resizing upload my file?", "Processing is designed for the browser per the tool description."],
+        ["Will quality drop?", "Downscaling is usually fine; upscaling cannot invent detail."]
+      ]
+    },
+    {
+      "slug": "ocr-image-to-text-online-free",
+      "title": "OCR image to text online free (JPG, PNG, PDF)",
+      "meta_description": "Extract text from photos and scans in your browser. English, French, Swahili OCR on web-free.site.",
+      "tool_slug": "free-image-to-text",
+      "category_slugs": ["image", "developer"],
+      "steps": [
+        "Open Free Image to Text and add a clear scan or photo.",
+        "Select the language that matches the document.",
+        "Run OCR and proofread the output—especially numbers and names.",
+        "Copy text or export for editing in your editor."
+      ],
+      "sections": [
+        {
+          "heading": "When OCR struggles",
+          "body": "Low light, skewed pages, and handwriting reduce accuracy. Flatten receipts and use higher contrast when possible."
+        }
+      ],
+      "faq": [
+        ["Are images uploaded?", "The hub describes browser-side OCR; verify on the live tool for sensitive IDs."],
+        ["Can I OCR PDF pages?", "Supported formats are listed on the live tool."]
+      ]
+    },
+    {
+      "slug": "upscale-image-ai-browser-free",
+      "title": "Upscale a photo ×2 or ×4 in the browser free",
+      "meta_description": "Upscale images with Real-ESRGAN in your tab. Free image upscaler—no sign-up on web-free.site.",
+      "tool_slug": "free-image-upscaler",
+      "category_slugs": ["image"],
+      "steps": [
+        "Open Free Image Upscaler and load a JPG or PNG.",
+        "Choose ×2 or ×4 depending on how large you need the output.",
+        "Wait for the model to finish on your device.",
+        "Download and compare sharpness at 100% zoom before you print."
+      ],
+      "sections": [
+        {
+          "heading": "Realistic expectations",
+          "body": "AI upscaling improves apparent detail but cannot recover information that was never in the source. It works best on slightly undersized assets, not extreme enlargements."
+        }
+      ],
+      "faq": [
+        ["Does upscaling work on anime?", "The description notes photo and anime modes—pick the matching setting."],
+        ["How heavy is it?", "Large images may be slow on low-memory phones."]
+      ]
+    },
+    {
+      "slug": "record-screen-with-microphone-no-watermark",
+      "title": "Record your screen with microphone and no watermark",
+      "meta_description": "Browser screen recording with mic and webcam, export WebM. Free screen recorder on web-free.site.",
+      "tool_slug": "free-screen-recorder",
+      "category_slugs": ["video"],
+      "steps": [
+        "Open Free Screen Recorder and choose screen, window, or tab capture.",
+        "Grant microphone or webcam permissions when prompted.",
+        "Record your walkthrough, then stop and trim if the tool offers it.",
+        "Export WebM and compress with Free Video Compressor for sharing."
+      ],
+      "sections": [
+        {
+          "heading": "Before you record",
+          "body": "Close unrelated tabs and mute notifications. Mention what viewers should click before you move the cursor."
+        }
+      ],
+      "faq": [
+        ["Is there a watermark?", "The tool listing states no watermark—confirm in the UI."],
+        ["Can I get MP4?", "Use Free Video Converter after export if you need MP4."]
+      ]
+    },
+    {
+      "slug": "trim-mp3-online-waveform-editor",
+      "title": "Trim MP3 online with a waveform editor",
+      "meta_description": "Cut and split MP3, WAV, and M4A in your browser. Free MP3 cutter—no account.",
+      "tool_slug": "free-mp3-cutter",
+      "category_slugs": ["audio"],
+      "steps": [
+        "Open Free MP3 Cutter and load your audio file.",
+        "Drag the selection handles on the waveform to the start and end points.",
+        "Preview the clip and export the trimmed file.",
+        "Use Free Audio Converter if you need another format."
+      ],
+      "sections": [
+        {
+          "heading": "Podcast and ringtone clips",
+          "body": "Waveform editing beats guessing timestamps in a text field. Keep a backup of the original before destructive cuts."
+        }
+      ],
+      "faq": [
+        ["Is audio uploaded?", "Designed for local editing per the tool description."],
+        ["Lossy re-encode?", "Re-exporting MP3 may soften quality slightly—use WAV for mastering if needed."]
+      ]
+    },
+    {
+      "slug": "convert-audio-mp3-wav-m4a-free",
+      "title": "Convert audio between MP3, WAV, M4A, and more free",
+      "meta_description": "Convert OPUS, OGG, AAC, and other audio in your browser. Free audio converter on web-free.site.",
+      "tool_slug": "free-audio-converter",
+      "category_slugs": ["audio"],
+      "steps": [
+        "Open Free Audio Converter and add your source file.",
+        "Pick the output format your app or editor requires.",
+        "Start conversion and wait in the tab.",
+        "Download and import into your editor or phone."
+      ],
+      "sections": [
+        {
+          "heading": "Why convert locally",
+          "body": "Voice memos and interview audio are sensitive. Browser conversion avoids mailing files to anonymous servers."
+        }
+      ],
+      "faq": [
+        ["Which formats?", "OPUS, OGG, M4A, WAV, AAC, and MP3 are listed."],
+        ["Batch convert?", "Check the live tool for queue support."]
+      ]
+    },
+    {
+      "slug": "convert-video-to-mp4-online-free",
+      "title": "Convert MKV, MOV, or WebM to MP4 online free",
+      "meta_description": "Convert video containers to MP4 in your browser. Free video converter—no sign-up.",
+      "tool_slug": "free-video-converter",
+      "category_slugs": ["video"],
+      "steps": [
+        "Open Free Video Converter and select a MOV, MKV, WebM, or AVI file.",
+        "Choose MP4 output settings if offered.",
+        "Run conversion and keep the tab open until finished.",
+        "Compress afterward if the MP4 is still too large for email."
+      ],
+      "sections": [
+        {
+          "heading": "Codec vs container",
+          "body": "Changing container to MP4 helps compatibility; it does not fix corrupted source files. Re-encode only when needed to save time."
+        }
+      ],
+      "faq": [
+        ["Does conversion reduce quality?", "Depends on bitrate settings—preview when available."],
+        ["Large files?", "Very long 4K clips may stress device memory."]
+      ]
+    },
+    {
+      "slug": "unzip-files-online-browser-free",
+      "title": "Unzip files online in your browser free",
+      "meta_description": "Open ZIP archives and preview contents without installing software. Free ZIP tool on web-free.site.",
+      "tool_slug": "free-zip-tool",
+      "category_slugs": ["utilities"],
+      "steps": [
+        "Open Free ZIP Tool and drop your archive.",
+        "Preview file names before extracting everything.",
+        "Extract to download individual files or a new ZIP.",
+        "Scan unexpected executables before you run them—even from trusted senders."
+      ],
+      "sections": [
+        {
+          "heading": "Security habit",
+          "body": "ZIPs are a common malware vector. Preview paths and avoid double-clicking `.exe` inside archives on Windows."
+        }
+      ],
+      "faq": [
+        ["Are passwords supported?", "Depends on the live tool’s ZIP library."],
+        ["Is the archive uploaded?", "Designed for browser processing per the description."]
+      ]
+    },
+    {
+      "slug": "typing-speed-test-wpm-certificate",
+      "title": "Typing speed test WPM with certificate download",
+      "meta_description": "Measure WPM and accuracy in English, French AZERTY, or Swahili. Download a PNG certificate—free typing test.",
+      "tool_slug": "free-typing-test",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Open Free Typing Test and pick your keyboard layout and language.",
+        "Complete the timed passage without looking at the keyboard.",
+        "Review WPM and accuracy on the results screen.",
+        "Download the PNG certificate if you need proof for coursework or HR."
+      ],
+      "sections": [
+        {
+          "heading": "Practice vs one-off tests",
+          "body": "Daily practice beats cramming before a single test. Use consistent layout (QWERTY vs AZERTY) so scores compare fairly."
+        }
+      ],
+      "faq": [
+        ["Is the certificate official?", "It is a self-serve record, not a third-party certification."],
+        ["Accounts?", "No hub account required."]
+      ]
+    },
+    {
+      "slug": "generate-meta-tags-sitemap-robots-txt",
+      "title": "Generate meta tags, sitemap, and robots.txt free",
+      "meta_description": "Draft SEO meta tags, XML sitemaps, JSON-LD, and robots.txt in your browser. Free SEO generator.",
+      "tool_slug": "free-seo-generator",
+      "category_slugs": ["developer"],
+      "steps": [
+        "Open Free SEO Generator and enter page title and description.",
+        "Generate robots.txt and sitemap snippets as needed.",
+        "Copy JSON-LD or hreflang blocks into your site template.",
+        "Validate with Google Rich Results or Search Console after deploy."
+      ],
+      "sections": [
+        {
+          "heading": "Generators do not rank alone",
+          "body": "Correct markup helps search engines understand pages; rankings still depend on content, links, and competition."
+        }
+      ],
+      "faq": [
+        ["Is markup stored?", "Output is for you to paste into your project."],
+        ["Guaranteed rankings?", "No—this is a drafting helper only."]
+      ]
+    },
+    {
+      "slug": "apa-mla-citation-generator-free",
+      "title": "APA and MLA citation generator free in the browser",
+      "meta_description": "Create APA, MLA, Chicago, IEEE, and BibTeX citations from DOI or URL. Free citation generator.",
+      "tool_slug": "free-citation-generator",
+      "category_slugs": ["developer", "text-writing"],
+      "steps": [
+        "Open Free Citation Generator and choose your style (APA, MLA, etc.).",
+        "Paste a DOI, ISBN, or URL for the source.",
+        "Review author names and dates—the generator may need manual fixes.",
+        "Copy the bibliography line into your paper or reference manager."
+      ],
+      "sections": [
+        {
+          "heading": "Always verify",
+          "body": "Automated citations miss edge cases. Compare against your institution’s style guide before submission."
+        }
+      ],
+      "faq": [
+        ["Does it store papers?", "Designed for browser use; do not paste unpublished work on shared PCs."],
+        ["BibTeX export?", "IEEE and BibTeX are listed in the tool description."]
+      ]
+    },
+    {
+      "slug": "text-to-speech-wav-download-free",
+      "title": "Text to speech free with WAV download",
+      "meta_description": "Convert text to natural speech with Piper voices in your browser. English and French—no API key.",
+      "tool_slug": "free-text-to-speech",
+      "category_slugs": ["developer", "audio"],
+      "steps": [
+        "Open Free Text to Speech and paste your script.",
+        "Pick voice and speed for English or French.",
+        "Generate audio and listen before you download.",
+        "Export WAV for video editing or podcast intros."
+      ],
+      "sections": [
+        {
+          "heading": "Use cases",
+          "body": "Draft voiceovers, accessibility previews, and language practice benefit from quick local synthesis without a studio."
+        }
+      ],
+      "faq": [
+        ["Commercial rights?", "Check Piper and tool terms for your use case."],
+        ["Cloud API?", "Designed to run in the browser per the listing."]
+      ]
+    },
+    {
+      "slug": "unit-converter-length-mass-temperature",
+      "title": "Unit converter for length, mass, and temperature",
+      "meta_description": "Convert 200+ units across 13 categories in your browser. Free unit converter—no sign-up.",
+      "tool_slug": "free-unit-converter",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Unit Converter and pick a category (length, mass, temperature, etc.).",
+        "Enter the value and select from and to units.",
+        "Read the converted result instantly.",
+        "Copy for homework, recipes, or engineering notes."
+      ],
+      "sections": [
+        {
+          "heading": "Temperature and cooking",
+          "body": "Fahrenheit ↔ Celsius mistakes ruin recipes. Double-check unit symbols when you convert quickly."
+        }
+      ],
+      "faq": [
+        ["Offline?", "Math runs in the tab without an account."],
+        ["Engineering precision?", "Verify critical tolerances with professional references."]
+      ]
+    },
+    {
+      "type": "comparison",
+      "slug": "browser-pdf-editor-vs-desktop-acrobat",
+      "title": "Browser PDF editor vs desktop Acrobat: honest comparison",
+      "meta_description": "When to use a free in-browser PDF tool vs paid desktop software. Web Free PDF converter—no sign-up.",
+      "tool_slug": "free-pdf-converter",
+      "tool_slugs": ["free-pdf-converter"],
+      "category_slugs": ["text-writing"],
+      "sections": [
+        {
+          "heading": "Summary",
+          "body": "Desktop suites like Adobe Acrobat excel at heavy print workflows, preflight, and enterprise redaction policies. Browser tools such as Web Free’s PDF converter fit quick merge, split, and compress jobs when you want files to stay on your device without installing software."
+        },
+        {
+          "heading": "Where browser tools win",
+          "body": "One-off tasks on a borrowed laptop, shared kiosks, and privacy-sensitive documents are easier when processing stays in the tab. There is nothing to patch if IT locks installs."
+        },
+        {
+          "heading": "Where desktop still leads",
+          "body": "Large batch OCR, certified digital signatures tied to hardware tokens, and complex prepress are still desktop territory. We do not claim parity with professional Creative Cloud workflows."
+        }
+      ],
+      "comparison_points": [
+        ["Sign-up", "Web Free: no hub account for listed tools.", "Acrobat: Adobe ID and subscription for full features."],
+        ["Privacy", "Web Free: built for in-browser PDF tasks.", "Desktop: local files, but cloud features optional."],
+        ["Cost", "Web Free: free tier on our network.", "Acrobat: paid plans for advanced editing."]
+      ],
+      "faq": [
+        ["Is Web Free a replacement for Acrobat?", "No—for occasional merge/compress it may be enough; for print shops, use pro tools."],
+        ["Upload?", "Check the live PDF tool and hub privacy note."]
+      ]
+    },
+    {
+      "type": "comparison",
+      "slug": "best-free-image-compressor-no-signup",
+      "title": "Best free image compressor with no sign-up (what to expect)",
+      "meta_description": "How browser image compressors compare to desktop apps. Honest look at Web Free Image Compressor.",
+      "tool_slug": "free-image-compressor",
+      "tool_slugs": ["free-image-compressor", "free-image-resizer"],
+      "category_slugs": ["image"],
+      "sections": [
+        {
+          "heading": "What ‘no sign-up’ should mean",
+          "body": "You open the page, drop images, and download results without creating an account. Web Free Image Compressor targets JPG, PNG, WebP, and AVIF with optional batch ZIP export."
+        },
+        {
+          "heading": "Compared to Squoosh or desktop tools",
+          "body": "Google’s Squoosh is a great benchmark for local codecs. Desktop Photoshop/Lightroom offer catalogs and non-destructive workflows we do not replicate. Our tool fits fast web optimization, not whole photo libraries."
+        }
+      ],
+      "comparison_points": [
+        ["Account", "Web Free: none on the hub.", "Some cloud optimizers require login to batch large jobs."],
+        ["Batch", "Web Free: queue + ZIP per description.", "Desktop: stronger for thousands of files."],
+        ["Privacy", "Web Free: browser-side when supported.", "Cloud APIs: trust their retention policy."]
+      ],
+      "faq": [
+        ["Best for ecommerce?", "Resize in Free Image Resizer, then compress for product pages."],
+        ["AVIF support?", "Listed in the compressor description."]
+      ]
+    },
+    {
+      "type": "comparison",
+      "slug": "browser-speech-to-text-vs-cloud-transcription",
+      "title": "Browser speech-to-text vs cloud transcription services",
+      "meta_description": "Local Whisper transcription vs upload-to-server services—honest tradeoffs. Web Free Speech to Text.",
+      "tool_slug": "free-speech-to-text",
+      "tool_slugs": ["free-speech-to-text"],
+      "category_slugs": ["developer", "audio"],
+      "sections": [
+        {
+          "heading": "Cloud services",
+          "body": "Upload-based transcription often offers speaker labels, team editing, and phone support. You trade privacy and upload time for scale."
+        },
+        {
+          "heading": "In-browser Whisper",
+          "body": "Web Free Speech to Text runs models in the tab for many workflows. Better for confidential interviews, legal notes, or slow uplinks."
+        }
+      ],
+      "comparison_points": [
+        ["Privacy", "Browser: audio may stay on device.", "Cloud: files stored per vendor policy."],
+        ["Languages", "Web Free: English, French, Swahili listed.", "Enterprise: 50+ with diarization."],
+        ["Cost", "Web Free: free to open.", "Cloud: per-minute billing at scale."]
+      ],
+      "faq": [
+        ["Medical use?", "Do not rely on consumer tools for HIPAA without review."],
+        ["SRT captions?", "Export SRT when offered and fix timing in your editor."]
+      ]
+    },
+    {
+      "type": "comparison",
+      "slug": "best-free-json-formatter-no-signup",
+      "title": "Best free JSON formatter with no sign-up",
+      "meta_description": "Compare browser JSON formatters vs IDE plugins. Web Free JSON formatter keeps data local.",
+      "tool_slug": "free-json-formatter",
+      "tool_slugs": ["free-json-formatter"],
+      "category_slugs": ["developer"],
+      "sections": [
+        {
+          "heading": "IDE formatters",
+          "body": "VS Code and JetBrains already pretty-print JSON when you paste into a `.json` file. They win when you live inside the editor."
+        },
+        {
+          "heading": "Why a browser tab still helps",
+          "body": "API responses in chat, CI logs, and support tickets are easier to read in a dedicated formatter. Web Free JSON Formatter validates and minifies without a project checkout."
+        }
+      ],
+      "comparison_points": [
+        ["Account", "Web Free: none.", "Some online formatters log pastes—avoid for secrets."],
+        ["Validation", "Web Free: syntax highlighting for errors.", "IDE: integrated with schemas."],
+        ["Minify", "Web Free: one-click minify for configs.", "IDE: build tools or jq on the command line."]
+      ],
+      "faq": [
+        ["Production secrets?", "Never paste live keys into any online tool on shared hardware."],
+        ["Large files?", "Very big JSON may slow the tab—split files if needed."]
+      ]
+    },
+    {
+      "type": "comparison",
+      "slug": "browser-background-removal-vs-remove-bg",
+      "title": "Browser background removal vs cloud APIs (honest view)",
+      "meta_description": "Local BiRefNet cutouts vs upload-based remove.bg-style services. Web Free Background Remover.",
+      "tool_slug": "free-background-remover",
+      "tool_slugs": ["free-background-remover"],
+      "category_slugs": ["image"],
+      "sections": [
+        {
+          "heading": "Cloud cutout APIs",
+          "body": "Services such as remove.bg popularized one-click backgrounds with polished marketing. They are fast and often excellent on product shots, but your pixels pass through their servers."
+        },
+        {
+          "heading": "Browser models",
+          "body": "Web Free Background Remover uses in-browser segmentation (BiRefNet family). Hair and glass remain hard for every approach—we do not promise studio perfection."
+        }
+      ],
+      "comparison_points": [
+        ["Upload", "Web Free: designed for on-device processing.", "Cloud: required for API workflow."],
+        ["Batch", "Cloud APIs: stronger for catalogs.", "Browser: best for a handful per session."],
+        ["Cost", "Web Free: free on our network.", "Cloud: credits and subscriptions at volume."]
+      ],
+      "faq": [
+        ["Ecommerce?", "Test edges on transparent PNG before listing."],
+        ["JPEG output?", "PNG transparency is typical; compress after cutout."]
+      ]
+    }
+  ]
+}

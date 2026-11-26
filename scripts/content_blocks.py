@@ -441,6 +441,56 @@ TOOL_FAQ: dict[str, list[tuple[str, str]]] = {
             "Work typically stays in the session until you download.",
         ),
     ],
+    "free-invoice-generator": [
+        (
+            "Which currencies are supported?",
+            "RWF, FCFA, USD, EUR, and others are listed for invoices and quotes.",
+        ),
+        (
+            "Can I print or export PDF?",
+            "Yes—export PDF from the browser for your records.",
+        ),
+    ],
+    "free-typing-test": [
+        (
+            "Does it support AZERTY?",
+            "French AZERTY layouts are noted alongside English and Swahili practice.",
+        ),
+        (
+            "Can I download a certificate?",
+            "PNG certificate export is included in the tool description.",
+        ),
+    ],
+    "free-video-converter": [
+        (
+            "Which formats convert to MP4?",
+            "MOV, MKV, WebM, and AVI are listed as inputs.",
+        ),
+        (
+            "Is conversion local?",
+            "Processing is designed for the browser tab without a hub account.",
+        ),
+    ],
+    "free-audio-converter": [
+        (
+            "Can I convert OPUS or OGG?",
+            "Yes—common audio formats including OPUS, OGG, M4A, WAV, AAC, and MP3.",
+        ),
+        (
+            "Are files uploaded?",
+            "Conversion is intended to stay on your device for supported workflows.",
+        ),
+    ],
+    "free-image-upscaler": [
+        (
+            "What upscale factors are available?",
+            "×2 and ×4 modes are listed using Real-ESRGAN in the browser.",
+        ),
+        (
+            "Will upscaling work on anime images?",
+            "The description mentions photo and anime sources.",
+        ),
+    ],
 }
 
 # Optional short guides on category hub pages (slug → paragraphs).

@@ -43,6 +43,10 @@
         {
           "heading": "Freelancers across regions",
           "body": "Cross-border work often needs CFA franc, Rwandan franc, or dollar quotes on the same day. A browser invoice tool avoids installing accounting software for one-off bills."
+        },
+        {
+          "heading": "Numbering and archives",
+          "body": "Use a consistent invoice number series in the line-item notes or reference field your client expects. Export PDF with a filename like `INV-2026-001-client.pdf` and store copies in your own backup— the hub does not host a ledger."
         }
       ],
       "faq": [
@@ -65,7 +69,7 @@
       "sections": [
         {
           "heading": "Pixels you do not need",
-          "body": "Uploading a 4000 px camera frame to a 600 px blog slot wastes bandwidth. Resize first, then compress."
+          "body": "Uploading a 4000 px camera frame to a 600 px blog slot wastes bandwidth. Resize first, then compress with the hub how-to for image compression—not the same as choosing a desktop photo library."
         }
       ],
       "faq": [

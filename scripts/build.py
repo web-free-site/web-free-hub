@@ -71,6 +71,10 @@ POPULAR_SLUGS = [
     "free-password-generator",
     "free-currency-converter",
     "free-json-formatter",
+    "free-speech-to-text",
+    "free-video-compressor",
+    "free-image-compressor",
+    "free-heic-to-jpg",
 ]
 
 CF_BEACON = (

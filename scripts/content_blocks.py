@@ -458,6 +458,16 @@ CATEGORY_GUIDES: dict[str, list[str]] = {
         "Paste API responses into Free JSON Formatter, then diff configs with Free Diff Checker before deploy.",
         "Use Free Speech to Text for interview notes; export SRT when you need captions.",
     ],
+    "calculators": [
+        "Use Free Currency Converter for live RWF, CFA, and major pairs; use Free Loan Calculator for amortization exports.",
+        "Free Percentage Calculator helps with VAT-style math and margin checks.",
+    ],
+    "text-writing": [
+        "Draft in Word Counter, build invoices with Free Invoice Generator, and export signed PDFs via Signature Generator.",
+    ],
+    "utilities": [
+        "Generate passwords locally, unpack ZIPs in-browser, and schedule calls with the time-zone converter.",
+    ],
 }
 
 CATEGORY_FAQ = {

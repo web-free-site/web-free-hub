@@ -105,3 +105,36 @@ Ranked by expected referral traffic and SEO value. **No paid listings, no badge 
 2. Ping sitemap in Google Search Console + Bing Webmaster.
 3. Publish `DRAFTS/PUBLISH-QUEUE.md` items in order.
 4. Open awesome-list PRs from personal GitHub using `EXTERNAL-PRS/`.
+
+---
+
+## Batch 3 — verified live listings (2026-11-26)
+
+HTTP status checked with `curl -L -A Mozilla/5.0` from the cloud agent. **No badge required** on our site unless noted. All free to submit; account may be required.
+
+| # | URL | Fits | Rules | Account | Verified |
+|---|-----|------|-------|---------|----------|
+| 41 | https://devhunt.org/ | Hub launch | Open-source/dev products; no forced backlink badge on product | GitHub login | HTTP 200 |
+| 42 | https://www.futuretools.io/submit-a-tool | AI + utility tools | Free submit form; factual description | Email/account | HTTP 200 |
+| 43 | https://www.aidirs.com/submit | Online tools / AI | Free listing form | Account | HTTP 200 |
+| 44 | https://toolfinder.co/submit | SaaS & free tools | Free submit; no badge on site required | Account | HTTP 200 |
+| 45 | https://www.aixploria.com/en/submit-ai-tool/ | AI & web tools | Free submission page | Account | HTTP 200 |
+| 46 | https://www.findly.tools/submit | Developer & utility tools | Free submit | Account | HTTP 200 |
+| 47 | https://dang.ai/submit | AI/tool directory | Free submission | Account | HTTP 200 |
+| 48 | https://www.aihunt.io/submit | AI & automation tools | Free listing request | Account | HTTP 200 |
+| 49 | https://openalternative.co/submit | Open web alternatives | Privacy-friendly tools; no badge swap | Account | HTTP 200 |
+| 50 | https://www.saashub.com/submit | Alternatives to SaaS | Suggest alternative entries (PDF, image tools) | Account | HTTP 200 |
+| 51 | https://libhunt.com/ | OSS / dev tools | Compare or add project; GitHub tie-in helps | Account | HTTP 200 |
+| 52 | https://free-for.dev/ | Free-tier services | GitHub PR to README; must be free | GitHub PR | HTTP 200 |
+| 53 | https://betalist.com/ | Startup / product launch | Free queue submission | Email | HTTP 200 |
+| 54 | https://adil0day.github.io/awesome-no-upload-tools/ | Browser-local PDF/image | GitHub PR (see `EXTERNAL-PRS/`) | GitHub | HTTP 200 (redirect from repo) |
+| 55 | https://microlaunch.net/ | Micro-SaaS & tools | Submit product | Account | HTTP 200 |
+| 56 | https://tinylaun.ch/ | Side projects | Short pitch + link | Account | HTTP 200 |
+| 57 | https://www.launchingnext.com/submit/ | Product launch | Form may block bots (403 without cookie) | Account | Live in browser |
+| 58 | https://alternativeto.net/ | Tool alternatives | Suggest per tool (`DRAFTS/alternativeto-submissions.md`) | Account | Live (403 to curl) |
+| 59 | https://producthunt.com/ | Hub launch day | No badge; scheduled launch | Account | Live (403 to curl) |
+| 60 | https://www.indiehackers.com/post/new | Build story | Community post; no badge | Account | Live (403 to curl) |
+
+**Skip (dead or wrong fit on 2026-11-26):** `freestuff.dev` (no response), `ns.tools/submit` (no response), `toptools.io/submit` (404), `feedough.com/submit-tool/` (404).
+
+**Link guides in submissions:** use new hub URLs e.g. `https://web-free.site/guides/compress-video-25mb-discord/` alongside tool links with `?ref=<directory>`.

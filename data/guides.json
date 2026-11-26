@@ -1,0 +1,499 @@
+{
+  "guides": [
+    {
+      "slug": "compress-video-25mb-discord",
+      "title": "How to compress a video to 25 MB for Discord",
+      "meta_description": "Shrink MP4 clips under Discord’s upload limit in your browser. Free video compressor on web-free.site—no sign-up.",
+      "tool_slug": "free-video-compressor",
+      "category_slugs": ["video"],
+      "steps": [
+        "Open the Free Video Compressor and load your MP4 or MOV file in the browser.",
+        "Pick a target size preset close to 25 MB or lower if Discord still rejects the file.",
+        "Start compression and keep the tab open until the progress finishes.",
+        "Download the output and check the file size in your file manager before you upload to Discord."
+      ],
+      "sections": [
+        {
+          "heading": "Why Discord rejects large videos",
+          "body": "Discord caps standard uploads on many accounts at about 25 MB (and less on mobile networks). Compressing locally avoids sending your raw clip to an unknown server and lets you retry presets without waiting on a upload queue."
+        },
+        {
+          "heading": "Quality tips",
+          "body": "If faces or text look soft, try a slightly higher bitrate preset and compress again. Short screen recordings often shrink dramatically with H.264 or similar browser encoders. Trim dead air first with a cutter tool if the clip is mostly static slides."
+        }
+      ],
+      "faq": [
+        [
+          "Does compression upload my video?",
+          "The compressor is built for in-browser work; see the tool privacy note before you process private footage."
+        ],
+        [
+          "What if the file is still over 25 MB?",
+          "Lower resolution or trim length, then compress again."
+        ]
+      ]
+    },
+    {
+      "slug": "remove-background-from-image-free-no-signup",
+      "title": "Remove background from an image free with no sign-up",
+      "meta_description": "Cut out a photo background in your browser and download a transparent PNG. No account on web-free.site.",
+      "tool_slug": "free-background-remover",
+      "category_slugs": ["image"],
+      "steps": [
+        "Open Free Background Remover in a modern browser.",
+        "Upload a JPG or PNG product photo or portrait.",
+        "Wait for the in-browser model to finish the cutout.",
+        "Download PNG with transparency and compress if you need a smaller file for the web."
+      ],
+      "sections": [
+        {
+          "heading": "When a local cutout beats a cloud editor",
+          "body": "Marketplace sellers and freelancers often need one hero image without mailing IDs or inventory shots to a third-party API. Browser-side segmentation keeps the file on your device for that session."
+        },
+        {
+          "heading": "Hard edges and hair",
+          "body": "Busy hair and glass reflections are never perfect. Zoom in on the preview and touch up stray pixels in a photo editor if the listing must be flawless."
+        }
+      ],
+      "faq": [
+        [
+          "Can I use the PNG on Etsy or Shopify?",
+          "Yes for your own listings; always follow each marketplace’s image rules."
+        ],
+        [
+          "Which format should I export?",
+          "PNG preserves transparency; use WebP or JPG after compression for faster page loads."
+        ]
+      ]
+    },
+    {
+      "slug": "convert-heic-to-jpg-online-free",
+      "title": "Convert HEIC to JPG online free (iPhone photos)",
+      "meta_description": "Turn HEIC and HEIF into JPG in your browser without uploading to a random converter. Free tool on web-free.site.",
+      "tool_slug": "free-heic-to-jpg",
+      "category_slugs": ["image"],
+      "steps": [
+        "Transfer HEIC files from your phone or open them from your computer.",
+        "Launch Free HEIC to JPG and add the photos to the converter.",
+        "Start conversion and wait for each JPG preview.",
+        "Download the JPGs and upload them to sites that reject Apple’s default format."
+      ],
+      "sections": [
+        {
+          "heading": "Why sites reject HEIC",
+          "body": "Windows tools, older CMS plugins, and many form uploaders expect JPG or PNG. Converting once saves support tickets and failed uploads."
+        },
+        {
+          "heading": "Keep originals",
+          "body": "HEIC is efficient for storage on iPhone. Convert copies for sharing; do not delete your camera roll unless you are sure you have backups."
+        }
+      ],
+      "faq": [
+        [
+          "Is EXIF data preserved?",
+          "Check the live tool for metadata handling; some converters strip location for privacy."
+        ],
+        [
+          "Can I convert many photos at once?",
+          "Batch behavior depends on the live tool—queue files and download a ZIP when offered."
+        ]
+      ]
+    },
+    {
+      "slug": "transcribe-audio-to-text-free-in-browser",
+      "title": "Transcribe audio to text free in your browser",
+      "meta_description": "Turn voice memos, meetings, or video audio into text with Whisper in the tab. Export TXT or SRT. No sign-up.",
+      "tool_slug": "free-speech-to-text",
+      "category_slugs": ["developer", "audio"],
+      "steps": [
+        "Open Free Speech to Text and choose microphone, file upload, or video source.",
+        "Select the spoken language (English, French, or Swahili as listed).",
+        "Run transcription and review the draft in the editor.",
+        "Export TXT for notes or SRT for captions."
+      ],
+      "sections": [
+        {
+          "heading": "Good audio improves accuracy",
+          "body": "Use a quiet room, place the mic closer, and avoid heavy music under speech. For interviews, separate tracks beat a single noisy MP3."
+        },
+        {
+          "heading": "Editing the transcript",
+          "body": "Always proofread names and numbers. Whisper handles clear speech well but can miss jargon—fix terms before you publish subtitles."
+        }
+      ],
+      "faq": [
+        [
+          "Is my recording uploaded?",
+          "Processing is designed for the browser; read the hub privacy note before you transcribe confidential calls."
+        ],
+        [
+          "Can I subtitle YouTube videos?",
+          "Export SRT and upload to your editor; verify timing in the video platform."
+        ]
+      ]
+    },
+    {
+      "slug": "format-json-online-validate-pretty-print",
+      "title": "Format JSON online: pretty-print and validate",
+      "meta_description": "Pretty-print, minify, and fix JSON syntax in your browser. Free formatter on web-free.site—data stays local.",
+      "tool_slug": "free-json-formatter",
+      "category_slugs": ["developer"],
+      "steps": [
+        "Copy JSON from an API response, log file, or config repo.",
+        "Paste into Free JSON Formatter and choose pretty-print or minify.",
+        "Fix syntax errors highlighted by the editor.",
+        "Copy the cleaned JSON back to your app or deployment script."
+      ],
+      "sections": [
+        {
+          "heading": "Why validate before deploy",
+          "body": "A single trailing comma breaks parsers in production. Formatting in the tab lets you see structure without shipping invalid config."
+        },
+        {
+          "heading": "Secrets hygiene",
+          "body": "Never paste production API keys on a shared computer. Client-side formatting reduces exposure but does not remove clipboard history—close the tab when finished."
+        }
+      ],
+      "faq": [
+        [
+          "Does it store my paste?",
+          "The formatter is intended for client-side use with no hub account."
+        ],
+        [
+          "Can I minify for production?",
+          "Yes—minify after you verify the pretty-printed version is correct."
+        ]
+      ]
+    },
+    {
+      "slug": "merge-pdf-without-uploading",
+      "title": "Merge PDF files without uploading to the cloud",
+      "meta_description": "Combine PDFs in your browser—merge, split, and compress without a sign-up. Free PDF converter on web-free.site.",
+      "tool_slug": "free-pdf-converter",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Gather the PDFs you want to combine and keep a backup copy.",
+        "Open Free PDF Converter and choose merge mode.",
+        "Drag files into the order you need for the final packet.",
+        "Download the merged PDF and open it once to confirm page order."
+      ],
+      "sections": [
+        {
+          "heading": "Sensitive documents",
+          "body": "Contracts and tax forms deserve tools that process in the browser. Use DevTools Network once on a test file if you want extra assurance."
+        },
+        {
+          "heading": "After merging",
+          "body": "If the file is too large for email, run compress in the same tool or split into chapters before you send."
+        }
+      ],
+      "faq": [
+        [
+          "Is there a page limit?",
+          "Limits depend on device memory—work in chunks for hundred-page scans."
+        ],
+        [
+          "Can I rotate pages?",
+          "Check the live tool for rotate and reorder controls."
+        ]
+      ]
+    },
+    {
+      "slug": "compress-images-for-website-free",
+      "title": "Compress images for your website without upload",
+      "meta_description": "Shrink JPG, PNG, WebP, and AVIF in the browser. Batch image compressor on web-free.site—no account.",
+      "tool_slug": "free-image-compressor",
+      "category_slugs": ["image"],
+      "steps": [
+        "Export the largest assets from your design tool or CMS.",
+        "Add files to Free Image Compressor’s batch queue.",
+        "Choose WebP or AVIF when your site supports modern formats.",
+        "Replace old assets on your host and re-test Lighthouse or PageSpeed."
+      ],
+      "sections": [
+        {
+          "heading": "How much to compress",
+          "body": "Hero photos can stay higher quality; thumbnails and blog inline images tolerate stronger compression. Aim for the smallest file that still looks crisp on a phone."
+        },
+        {
+          "heading": "Pair with resize",
+          "body": "Downscale oversized camera photos before compressing—pixels you never display should not ship to visitors."
+        }
+      ],
+      "faq": [
+        [
+          "Will AVIF work everywhere?",
+          "Safari and Chrome support AVIF; provide JPG fallbacks if your stack requires them."
+        ],
+        [
+          "Can I download a ZIP?",
+          "Batch tools often export ZIP archives—check the live UI."
+        ]
+      ]
+    },
+    {
+      "slug": "create-qr-code-free-download-png",
+      "title": "Create a QR code free and download PNG",
+      "meta_description": "Generate styled QR codes and barcodes in your browser. Scan before you print. Free QR creator on web-free.site.",
+      "tool_slug": "free-qr-code-creator",
+      "category_slugs": ["image"],
+      "steps": [
+        "Decide what the QR should open—a URL, Wi-Fi credentials, or plain text.",
+        "Enter the data in Free QR Code Creator and pick colors if you want branding.",
+        "Scan the preview with your phone camera to confirm it resolves.",
+        "Download PNG for slides or SVG for print shops."
+      ],
+      "sections": [
+        {
+          "heading": "Contrast matters",
+          "body": "Light gray on white fails in dim restaurants. Keep a quiet zone around the code and test at the size you will print."
+        },
+        {
+          "heading": "Menus and events",
+          "body": "Short URLs behind the QR load faster than multi-kilobyte links encoded directly."
+        }
+      ],
+      "faq": [
+        [
+          "Do styled QR codes always scan?",
+          "Only when contrast and margin rules are respected—always test."
+        ],
+        [
+          "Is there a scan feature?",
+          "The tool description includes scanning—open the live app for camera access."
+        ]
+      ]
+    },
+    {
+      "slug": "extract-mp3-from-video-free",
+      "title": "Extract MP3 from video free in the browser",
+      "meta_description": "Pull MP3 audio from MP4, MOV, or WebM locally with FFmpeg.wasm-style processing. No upload on web-free.site.",
+      "tool_slug": "free-video-to-mp3",
+      "category_slugs": ["video", "audio"],
+      "steps": [
+        "Open Free Video to MP3 and pick your source video file.",
+        "Choose an MP3 bitrate appropriate for speech or music.",
+        "Run extraction and wait for the browser job to finish.",
+        "Download MP3 and tag it in your music app if needed."
+      ],
+      "sections": [
+        {
+          "heading": "Podcast clips",
+          "body": "Screen recordings and webinar MP4s often carry a single mixed track—extract audio before you edit in a DAW."
+        },
+        {
+          "heading": "Bitrate guide",
+          "body": "128 kbps is fine for spoken word; music may need 192 kbps or higher to avoid metallic artifacts."
+        }
+      ],
+      "faq": [
+        [
+          "Is video uploaded?",
+          "Extraction is designed to stay in the tab for supported formats."
+        ],
+        [
+          "Can I trim first?",
+          "Use Free MP3 Cutter after export or trim in the video tool if available."
+        ]
+      ]
+    },
+    {
+      "slug": "word-counter-for-essays-reading-time",
+      "title": "Word counter for essays with reading time",
+      "meta_description": "Count words, characters, and reading time in your browser. Free word counter on web-free.site—no sign-up.",
+      "tool_slug": "free-word-counter",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Paste your essay draft into Free Word Counter.",
+        "Check word count against the assignment limit.",
+        "Use reading time to gauge presentation length.",
+        "Edit in your editor and paste again until you hit the target."
+      ],
+      "sections": [
+        {
+          "heading": "Academic limits",
+          "body": "Admissions essays, scholarships, and exam sections often specify hard caps. Counting in the browser avoids sending your draft to a server."
+        },
+        {
+          "heading": "SEO and blogging",
+          "body": "Bloggers use the same tool to target article length bands that match search intent—not as a ranking guarantee, but as a drafting aid."
+        }
+      ],
+      "faq": [
+        [
+          "Does it count hyphenated words?",
+          "Rules match typical English counters—verify once against your institution’s policy."
+        ],
+        [
+          "Is text stored online?",
+          "Counting runs locally for typical use."
+        ]
+      ]
+    },
+    {
+      "slug": "strong-password-generator-no-upload",
+      "title": "Strong password generator with no upload",
+      "meta_description": "Create long random passwords and passphrases in your browser. Secrets stay on your device. Free on web-free.site.",
+      "tool_slug": "free-password-generator",
+      "category_slugs": ["utilities"],
+      "steps": [
+        "Open Free Password Generator and set length (12–16+ for important sites).",
+        "Include upper, lower, numbers, and symbols unless the site forbids some.",
+        "Generate once and copy immediately into a password manager.",
+        "Close the tab on shared computers."
+      ],
+      "sections": [
+        {
+          "heading": "Never reuse passwords",
+          "body": "A unique secret per account limits damage when one site leaks credentials. Let the manager autofill; do not memorize dozens of strings."
+        },
+        {
+          "heading": "Passphrases",
+          "body": "Long phrases with random words can be easier to type on mobile when a manager is unavailable—still store them securely."
+        }
+      ],
+      "faq": [
+        [
+          "Are passwords sent to Web Free?",
+          "Generation is designed to occur in your browser only."
+        ],
+        [
+          "What about PINs?",
+          "Use the PIN mode for device codes when offered."
+        ]
+      ]
+    },
+    {
+      "slug": "passport-photo-maker-online-free",
+      "title": "Passport photo maker online free (official sizes)",
+      "meta_description": "Crop ID and passport photos to official sizes with a print sheet in your browser. No watermark per tool listing.",
+      "tool_slug": "free-passport-photo-maker",
+      "category_slugs": ["image"],
+      "steps": [
+        "Take a well-lit photo on a plain background with your face centered.",
+        "Upload to Free Passport Photo Maker and pick your country or size preset.",
+        "Adjust crop so head height matches the on-screen guide.",
+        "Download the print sheet and print at actual size (100%) at a photo shop or home printer."
+      ],
+      "sections": [
+        {
+          "heading": "Government rules change",
+          "body": "Embassies publish millimeter dimensions and background color rules. Always confirm with the official source before you mail an application."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Face the window, avoid shadows under eyes, and remove filters. Glasses glare is a common rejection reason."
+        }
+      ],
+      "faq": [
+        [
+          "Is there a watermark?",
+          "The hub listing states no watermark—verify in the live export."
+        ],
+        [
+          "Can babies be cropped?",
+          "Use presets for infant photos when available and follow agency guidance."
+        ]
+      ]
+    },
+    {
+      "slug": "video-to-gif-converter-free",
+      "title": "Convert video to GIF free in the browser",
+      "meta_description": "Turn MP4, WebM, or MOV clips into GIFs locally. Free converter on web-free.site—no account.",
+      "tool_slug": "free-video-to-gif",
+      "category_slugs": ["video"],
+      "steps": [
+        "Trim the source clip to a short loop (a few seconds keeps file size sane).",
+        "Load the video into Free Video to GIF.",
+        "Set frame rate and width so the GIF stays under chat limits.",
+        "Download and test in Slack or Discord before you post."
+      ],
+      "sections": [
+        {
+          "heading": "GIF size tradeoffs",
+          "body": "Full HD GIFs explode in megabytes. Narrow width and lower FPS make loops shareable."
+        },
+        {
+          "heading": "Alternatives",
+          "body": "For product demos, consider MP4 with sound muted—many apps play video more efficiently than GIF."
+        }
+      ],
+      "faq": [
+        [
+          "Can GIFs have transparency?",
+          "Depends on the encoder—check the preview."
+        ],
+        [
+          "Is upload required?",
+          "Conversion is intended for local files in the browser."
+        ]
+      ]
+    },
+    {
+      "slug": "compare-two-text-files-online-diff",
+      "title": "Compare two text files online (diff checker)",
+      "meta_description": "Side-by-side diff for code, configs, and contracts in your browser. Free diff checker on web-free.site.",
+      "tool_slug": "free-diff-checker",
+      "category_slugs": ["developer"],
+      "steps": [
+        "Open Free Diff Checker in two panes.",
+        "Paste the original text on the left and the revised text on the right.",
+        "Review highlighted additions and deletions.",
+        "Copy the merged version or export per the live tool."
+      ],
+      "sections": [
+        {
+          "heading": "Config and legal drafts",
+          "body": "A quick diff before you sign or deploy catches accidental paragraph drops and comma changes in JSON keys."
+        },
+        {
+          "heading": "Large files",
+          "body": "Very large pastes may slow the tab—split into sections if the browser struggles."
+        }
+      ],
+      "faq": [
+        [
+          "Is my text stored?",
+          "Designed for client-side comparison on the hub listing."
+        ],
+        [
+          "Does it compare binary files?",
+          "Use text or exported source; binary diff needs specialized tools."
+        ]
+      ]
+    },
+    {
+      "slug": "currency-converter-rwf-usd-cfa-live",
+      "title": "Currency converter RWF, USD, and CFA with live rates",
+      "meta_description": "Convert RWF, West and Central African CFA, and 140+ currencies with live rates in your browser.",
+      "tool_slug": "free-currency-converter",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Currency Converter and pick your from and to currencies.",
+        "Enter the amount you want to convert.",
+        "Read the result and note the rate timestamp if shown.",
+        "Export or copy for invoices when the tool supports it."
+      ],
+      "sections": [
+        {
+          "heading": "Travel and freelance invoicing",
+          "body": "East African shillings and CFA francs appear often in cross-border work. Live rates help you quote clients fairly before you lock a contract amount."
+        },
+        {
+          "heading": "Not for trading",
+          "body": "Retail rates differ from interbank spreads. Use professional platforms for forex trading decisions."
+        }
+      ],
+      "faq": [
+        [
+          "Do rates update offline?",
+          "Live rates need a network fetch; other calculators on the hub may work offline."
+        ],
+        [
+          "How many currencies?",
+          "The tool listing cites 140+ codes including USD and EUR."
+        ]
+      ]
+    }
+  ]
+}

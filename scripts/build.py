@@ -30,6 +30,7 @@ DATA = json.loads((ROOT / "data/tools.json").read_text(encoding="utf-8"))
 CAT_PAGES = json.loads((ROOT / "data/category-pages.json").read_text(encoding="utf-8"))[
     "pages"
 ]
+GUIDES_DATA = json.loads((ROOT / "data/guides.json").read_text(encoding="utf-8"))["guides"]
 PUBLIC = ROOT / "public"
 
 SITE = "https://web-free.site"
@@ -113,6 +114,12 @@ for page in CAT_PAGES:
         for t in CAT_BY_ID.get(cid, {}).get("tools", []):
             SLUG_TO_CAT_PAGE[t["slug"]] = page["slug"]
 
+GUIDE_BY_SLUG: dict[str, dict] = {g["slug"]: g for g in GUIDES_DATA}
+GUIDES_BY_CATEGORY: dict[str, list[dict]] = {}
+for g in GUIDES_DATA:
+    for cs in g.get("category_slugs", []):
+        GUIDES_BY_CATEGORY.setdefault(cs, []).append(g)
+
 
 def esc(s: str) -> str:
     return html.escape(s, quote=True)
@@ -123,6 +130,15 @@ def tool_href(tool: dict, lang: str = "en") -> str:
     ref = "ref=hub-fr" if lang == "fr" else "ref=hub"
     if "ref=" not in href:
         href = href + ("&" if "?" in href else "?") + ref
+    return href
+
+
+def tool_href_guide(tool: dict) -> str:
+    href = tool["url"]
+    ref = "ref=hub-guide"
+    if "ref=" in href:
+        href = re.sub(r"[?&]ref=[^&]+", "", href).rstrip("?&")
+    href = href + ("&" if "?" in href else "?") + ref
     return href
 
 
@@ -225,6 +241,7 @@ def footer_block(depth: int = 0, lang: str = "en") -> str:
             f'<p class="fine">'
             f'<a href="{SITE}/">web-free.site</a> · '
             f'<a href="{p}about/">About</a> · '
+            f'<a href="{p}guides/">Guides</a> · '
             f'<a href="{p}contact/">Contact</a> · '
             f'<a href="{p}privacy/">Privacy</a> · '
             f'<a href="{p}terms/">Terms</a> · '
@@ -478,6 +495,14 @@ def homepage_en() -> str:
         guide_blocks.append(f"      <h3>{esc(gtitle)}</h3>")
         guide_blocks.append(f"      <p>{esc(gbody)}</p>")
 
+    long_tail_cards = []
+    for g in GUIDES_DATA[:8]:
+        long_tail_cards.append(
+            f'      <a class="card tool-card" href="/guides/{esc(g["slug"])}/">'
+            f"<strong>{esc(g['title'])}</strong>"
+            f'<span>{esc(g["meta_description"][:100])}…</span></a>'
+        )
+
     intro_paras = "".join(f"<p>{esc(p)}</p>" for p in HOME_INTRO.strip().split("\n\n"))
 
     return "\n".join(
@@ -518,6 +543,13 @@ def homepage_en() -> str:
             "    </section>",
             '    <section class="prose intro-block">',
             intro_paras,
+            "    </section>",
+            '    <section class="panel" aria-labelledby="h-longtail">',
+            '      <h2 id="h-longtail">Guides for common searches</h2>',
+            '      <p class="lede"><a href="/guides/">Browse all ' + str(len(GUIDES_DATA)) + ' guides</a></p>',
+            '      <div class="card-grid">',
+            *long_tail_cards,
+            "      </div>",
             "    </section>",
             '    <section class="panel prose how-to-guides" aria-labelledby="h-guides">',
             '      <h2 id="h-guides">How-to guides</h2>',
@@ -660,6 +692,153 @@ def tool_page(tool: dict) -> str:
     )
 
 
+def guide_page(guide: dict) -> str:
+    slug = guide["slug"]
+    tool = TOOL_BY_SLUG[guide["tool_slug"]]
+    cat_slug = guide["category_slugs"][0]
+    cat_page = next((p for p in CAT_PAGES if p["slug"] == cat_slug), CAT_PAGES[0])
+    title = f"{guide['title']} | Web Free"
+    meta = guide["meta_description"]
+    canonical = f"{SITE}/guides/{slug}/"
+    crumbs = [
+        ("Home", f"{SITE}/"),
+        ("Guides", f"{SITE}/guides/"),
+        (guide["title"], canonical),
+    ]
+    crumbs_html = '    <nav class="breadcrumbs" aria-label="Breadcrumb">'
+    crumbs_html += '<a href="/">Home</a> <span aria-hidden="true">/</span> '
+    crumbs_html += '<a href="/guides/">Guides</a> <span aria-hidden="true">/</span> '
+    crumbs_html += f'<span>{esc(guide["title"])}</span></nav>'
+
+    short = re.sub(r"^Free ", "", tool["name"])
+    steps = guide.get("steps", [])
+    sections_html = []
+    for sec in guide.get("sections", []):
+        sections_html.append(f"      <h2>{esc(sec['heading'])}</h2>")
+        sections_html.append(f"      <p>{esc(sec['body'])}</p>")
+
+    faq = guide.get("faq", [])
+    faq_html = []
+    for q, a in faq:
+        faq_html.append(
+            f'      <details class="faq-item"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>'
+        )
+
+    howto_ld = {
+        "@context": "https://schema.org",
+        "@graph": [
+            json.loads(breadcrumbs_ld(crumbs)),
+            {
+                "@type": "HowTo",
+                "name": guide["title"],
+                "description": meta,
+                "step": [
+                    {"@type": "HowToStep", "position": i, "text": s}
+                    for i, s in enumerate(steps, start=1)
+                ],
+            },
+        ],
+    }
+    if faq:
+        howto_ld["@graph"].append(json.loads(faq_ld([(q, a) for q, a in faq])))
+    extra_ld = json.dumps(howto_ld, ensure_ascii=False, indent=2)
+
+    related = GUIDES_BY_CATEGORY.get(cat_slug, [])
+    related_links = []
+    for rg in related:
+        if rg["slug"] == slug:
+            continue
+        related_links.append(
+            f'        <a class="card tool-card" href="/guides/{esc(rg["slug"])}/">{esc(rg["title"])}</a>'
+        )
+        if len(related_links) >= 4:
+            break
+
+    return "\n".join(
+        [
+            "<!DOCTYPE html>",
+            '<html lang="en">',
+            head_block(title=title, description=meta, canonical=canonical, depth=2, extra_json_ld=extra_ld),
+            "<body>",
+            '  <a class="skip" href="#main">Skip to content</a>',
+            header_nav(2, "en"),
+            '  <main id="main" class="tool-detail">',
+            crumbs_html,
+            f"    <h1>{esc(guide['title'])}</h1>",
+            '    <p class="lede">',
+            f'      <a class="btn btn-primary" href="{esc(tool_href_guide(tool))}">Open {esc(short)}</a>',
+            f'      <a class="btn" href="/tools/{esc(tool["slug"])}/">Hub details</a>',
+            f'      <a class="btn" href="/category/{esc(cat_slug)}/">{esc(cat_page["title"])}</a>',
+            "</p>",
+            '    <section class="prose">',
+            "      <h2>Steps</h2>",
+            "      <ol>",
+            *[f"        <li>{esc(s)}</li>" for s in steps],
+            "      </ol>",
+            *sections_html,
+            f"      <p>Tool: <a href=\"/tools/{esc(tool['slug'])}/\">{esc(tool['name'])}</a> · "
+            f'<a href="{esc(tool_href_guide(tool))}">Open live tool</a>.</p>',
+            "    </section>",
+            '    <section class="panel faq" aria-labelledby="h-gfaq">',
+            '      <h2 id="h-gfaq">FAQ</h2>',
+            *faq_html,
+            "    </section>",
+            '    <section class="panel" aria-labelledby="h-grel">',
+            '      <h2 id="h-grel">More guides</h2>',
+            '      <div class="card-grid">',
+            *related_links,
+            "      </div>",
+            "    </section>",
+            "  </main>",
+            footer_block(2, "en"),
+            f"  {CF_BEACON}",
+            "</body>",
+            "</html>",
+            "",
+        ]
+    )
+
+
+def guides_index_page() -> str:
+    canonical = f"{SITE}/guides/"
+    title = "How-to guides — free browser tools | Web Free"
+    desc = "Long-form English guides for video, PDF, images, JSON, audio, and calculators on web-free.site. Each links to a free tool—no sign-up."
+    cards = []
+    for g in GUIDES_DATA:
+        tool = TOOL_BY_SLUG[g["tool_slug"]]
+        cards.append(
+            f'      <a class="card tool-card" href="/guides/{esc(g["slug"])}/">'
+            f"<strong>{esc(g['title'])}</strong>"
+            f'<span>{esc(g["meta_description"][:120])}…</span>'
+            f'<span class="desc">Tool: {esc(tool["name"])}</span></a>'
+        )
+    return "\n".join(
+        [
+            "<!DOCTYPE html>",
+            '<html lang="en">',
+            head_block(title=title, description=desc, canonical=canonical, depth=1),
+            "<body>",
+            '  <a class="skip" href="#main">Skip to content</a>',
+            header_nav(1, "en"),
+            '  <main id="main">',
+            "    <h1>How-to guides</h1>",
+            '    <p class="lede">Practical walkthroughs that point to free Web Free tools. English only; links use <code>?ref=hub-guide</code> for attribution.</p>',
+            '    <section class="panel" aria-labelledby="h-allguides">',
+            '      <h2 id="h-allguides">All guides</h2>',
+            '      <div class="card-grid">',
+            *cards,
+            "      </div>",
+            "    </section>",
+            "  </main>",
+            footer_block(1, "en"),
+            f"  {CF_BEACON}",
+            "</body>",
+            "</html>",
+            "",
+        ]
+    )
+
+
 def category_page(page: dict) -> str:
     slug = page["slug"]
     title = f"{page['title']} | Web Free"
@@ -715,6 +894,25 @@ def category_page(page: dict) -> str:
     for q, a in qas:
         faq_html.append(f"      <details class=\"faq-item\"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>")
 
+    cat_guides = GUIDES_BY_CATEGORY.get(slug, [])
+    guide_cards = []
+    for g in cat_guides:
+        guide_cards.append(
+            f'      <a class="card tool-card" href="/guides/{esc(g["slug"])}/">'
+            f"<strong>{esc(g['title'])}</strong>"
+            f'<span>{esc(g["meta_description"][:90])}…</span></a>'
+        )
+    guides_section = []
+    if guide_cards:
+        guides_section = [
+            '    <section class="panel" aria-labelledby="h-guides">',
+            '      <h2 id="h-guides">How-to guides</h2>',
+            '      <div class="card-grid">',
+            *guide_cards,
+            "      </div>",
+            "    </section>",
+        ]
+
     return "\n".join(
         [
             "<!DOCTYPE html>",
@@ -731,6 +929,7 @@ def category_page(page: dict) -> str:
             f"    <h1>{esc(page['title'])}</h1>",
             f'    <section class="prose">{intro}</section>',
             *guide_section,
+            *guides_section,
             '    <section class="panel" aria-labelledby="h-tools">',
             '      <h2 id="h-tools">Tools in this category</h2>',
             '      <div class="card-grid">',
@@ -938,6 +1137,8 @@ def sitemap_xml(urls: list[str]) -> str:
         pri = "1.0" if loc in (f"{SITE}/",) else "0.7"
         if "/tools/" in loc:
             pri = "0.8"
+        elif "/guides/" in loc:
+            pri = "0.75"
         parts += [
             "  <url>",
             f"    <loc>{loc}</loc>",
@@ -1027,6 +1228,9 @@ def make_og():
 
 def collect_urls() -> list[str]:
     urls = [f"{SITE}/", f"{SITE}/fr/", f"{SITE}/about/", f"{SITE}/contact/", f"{SITE}/privacy/", f"{SITE}/terms/"]
+    urls.append(f"{SITE}/guides/")
+    for g in GUIDES_DATA:
+        urls.append(f"{SITE}/guides/{g['slug']}/")
     for page in CAT_PAGES:
         urls.append(f"{SITE}/category/{page['slug']}/")
     for t in ALL_TOOLS:
@@ -1065,6 +1269,7 @@ def main() -> None:
     (PUBLIC / "fr").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "category").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "tools").mkdir(parents=True, exist_ok=True)
+    (PUBLIC / "guides").mkdir(parents=True, exist_ok=True)
     for sub in ("about", "contact", "privacy", "terms"):
         (PUBLIC / sub).mkdir(parents=True, exist_ok=True)
 
@@ -1081,6 +1286,12 @@ def main() -> None:
         out = PUBLIC / "tools" / tool["slug"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(tool_page(tool), encoding="utf-8")
+
+    (PUBLIC / "guides/index.html").write_text(guides_index_page(), encoding="utf-8")
+    for guide in GUIDES_DATA:
+        out = PUBLIC / "guides" / guide["slug"] / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(guide_page(guide), encoding="utf-8")
 
     (PUBLIC / "about/index.html").write_text(
         simple_page(

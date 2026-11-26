@@ -34,6 +34,9 @@ GUIDES_DATA = json.loads((ROOT / "data/guides.json").read_text(encoding="utf-8")
 _batch3 = ROOT / "data/guides-batch3.json"
 if _batch3.exists():
     GUIDES_DATA.extend(json.loads(_batch3.read_text(encoding="utf-8"))["guides"])
+_batch4 = ROOT / "data/guides-batch4.json"
+if _batch4.exists():
+    GUIDES_DATA.extend(json.loads(_batch4.read_text(encoding="utf-8"))["guides"])
 PUBLIC = ROOT / "public"
 
 SITE = "https://web-free.site"

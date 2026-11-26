@@ -1,0 +1,463 @@
+{
+  "guides": [
+    {
+      "slug": "calculate-exact-age-years-months-days",
+      "title": "Calculate exact age in years, months, and days",
+      "meta_description": "Birthday countdown and age between two dates in your browser. Free age calculator on web-free.site—no sign-up.",
+      "tool_slug": "free-age-calculator",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Age Calculator and enter the birth date (and a reference date if you compare two moments).",
+        "Confirm the calendar fields match your locale’s day/month order.",
+        "Read years, months, and days—not just total years.",
+        "Use the countdown output for event planning if the tool shows it."
+      ],
+      "sections": [
+        {
+          "heading": "Forms vs mental math",
+          "body": "Visa forms, school enrollment, and insurance quotes often ask for precise age on a specific date. A calculator avoids leap-year mistakes."
+        },
+        {
+          "heading": "Privacy",
+          "body": "Dates of birth are sensitive. Browser-side math keeps inputs in the session; close the tab on shared computers."
+        }
+      ],
+      "faq": [
+        ["Leap years?", "The tool handles calendar rules; verify critical legal dates with official documents."],
+        ["Account required?", "No hub account on the listing."]
+      ]
+    },
+    {
+      "slug": "bmi-calculator-adults-and-children-who",
+      "title": "BMI calculator for adults and children (WHO)",
+      "meta_description": "Adult BMI in metric or imperial plus child BMI-for-age percentiles in your browser. Educational use only.",
+      "tool_slug": "free-bmi-calculator",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free BMI Calculator and choose adult or child mode (0–19).",
+        "Enter height and weight in the units shown (metric or imperial).",
+        "Read BMI and, for children, percentile context when offered.",
+        "Discuss results with a clinician for health decisions—this is not medical advice."
+      ],
+      "sections": [
+        {
+          "heading": "What BMI does and does not do",
+          "body": "BMI is a screening shortcut. It ignores muscle mass, bone density, and ethnicity-specific nuance. Use it for rough tracking, not diagnosis."
+        },
+        {
+          "heading": "Child growth charts",
+          "body": "Pediatric percentiles compare a child to WHO reference data. A single point matters less than the trend over time."
+        }
+      ],
+      "faq": [
+        ["Medical advice?", "No—estimates only."],
+        ["Athletes?", "High muscle can push BMI up without excess fat; interpret with care."]
+      ]
+    },
+    {
+      "slug": "loan-payment-amortization-schedule-free",
+      "title": "Loan payment and amortization schedule free",
+      "meta_description": "Monthly payment, total interest, and CSV/PDF amortization in your browser. Free loan calculator—no account.",
+      "tool_slug": "free-loan-calculator",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Loan Calculator and enter principal, annual rate, and term.",
+        "Add an extra monthly payment if you want to model early payoff.",
+        "Review the payment, total interest, and amortization table.",
+        "Export CSV or PDF for your records if the tool offers it."
+      ],
+      "sections": [
+        {
+          "heading": "Compare offers",
+          "body": "Lenders quote rates with different fees. Normalize to the same term and rate before you compare monthly payments."
+        },
+        {
+          "heading": "Limits",
+          "body": "Variable rates, balloon payments, and local regulations are not modeled here. Verify final numbers with your bank."
+        }
+      ],
+      "faq": [
+        ["Extra payments?", "Modeled as a steady additional amount when the field is present."],
+        ["Financial advice?", "No—use for planning spreadsheets only."]
+      ]
+    },
+    {
+      "slug": "percentage-vat-discount-margin-calculator",
+      "title": "Percentage, VAT, discount, and margin calculator",
+      "meta_description": "VAT-style percent math, discounts, and margins with RWF/FCFA examples. Free percentage calculator in the browser.",
+      "tool_slug": "free-percentage-calculator",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Percentage Calculator and pick the mode (percent of, change, VAT, margin, etc.).",
+        "Enter the numbers from your receipt, quote, or spreadsheet.",
+        "Check the worked result against your expected sign (increase vs decrease).",
+        "Copy values into your invoice or inventory sheet."
+      ],
+      "sections": [
+        {
+          "heading": "Shop owners",
+          "body": "Margin and markup are easy to invert. Always label whether you mean profit margin on price or markup on cost."
+        },
+        {
+          "heading": "Regional VAT examples",
+          "body": "The tool description cites 18% VAT and regional currency examples—confirm the rate that applies in your jurisdiction."
+        }
+      ],
+      "faq": [
+        ["Reverse percentages?", "Use reverse mode when offered for “what price before tax?” problems."],
+        ["Offline?", "Runs in the tab without sign-up."]
+      ]
+    },
+    {
+      "slug": "online-calculator-offline-in-browser",
+      "title": "Use an online calculator that works offline in the browser",
+      "meta_description": "Instant arithmetic and scientific keys without installing an app. Free online calculator at web-free.site/en/—no sign-up.",
+      "tool_slug": "free-online-calculator",
+      "category_slugs": ["calculators"],
+      "steps": [
+        "Open Free Online Calculator (English UI at /en/ on the live subdomain).",
+        "Perform basic or scientific operations from the keypad.",
+        "Bookmark the page on devices where you need quick math.",
+        "Reload once while online if you want offline behavior described on the listing."
+      ],
+      "sections": [
+        {
+          "heading": "When to use this vs unit converter",
+          "body": "This tool is for expressions and scientific keys. For miles→km or °F→°C, use Free Unit Converter instead—different job."
+        },
+        {
+          "heading": "Homework and retail",
+          "body": "Cashiers and students benefit from a tab that does not require app-store installs on locked-down PCs."
+        }
+      ],
+      "faq": [
+        ["Languages?", "The hub links to the English path; other locales may exist on the live tool."],
+        ["History tape?", "Check the live UI for memory/history features."]
+      ]
+    },
+    {
+      "slug": "pick-colors-from-image-hex-rgb",
+      "title": "Pick colors from an image (HEX and RGB)",
+      "meta_description": "Eyedropper any pixel and copy HEX, RGB, or HSL in your browser. Free color picker on web-free.site.",
+      "tool_slug": "free-color-picker",
+      "category_slugs": ["image", "design"],
+      "steps": [
+        "Open Free Color Picker and upload a screenshot, logo, or photo.",
+        "Click the pixel you want as your brand or UI accent.",
+        "Copy HEX or RGB into your CSS, Figma, or slide deck.",
+        "Save swatches in your design system doc— the tool does not host palettes."
+      ],
+      "sections": [
+        {
+          "heading": "Accessibility",
+          "body": "Check contrast against white or black text before you ship a new button color. WCAG AA needs sufficient luminance difference."
+        },
+        {
+          "heading": "Print vs screen",
+          "body": "Screen HEX does not automatically match CMYK print. Convert with your print shop’s profile for packaging."
+        }
+      ],
+      "faq": [
+        ["Upload?", "Designed for local image sampling per the listing."],
+        ["Palette limits?", "Pick as many colors as you need in one session."]
+      ]
+    },
+    {
+      "slug": "crop-rotate-filter-photo-browser",
+      "title": "Crop, rotate, and filter a photo in the browser",
+      "meta_description": "Lightweight photo edits without installing Photoshop. Free photo editor—nothing uploaded on web-free.site.",
+      "tool_slug": "free-photo-editor",
+      "category_slugs": ["image"],
+      "steps": [
+        "Open Free Photo Editor and load your JPG or PNG.",
+        "Crop to the aspect ratio you need for social or print.",
+        "Rotate or straighten horizons, then apply a subtle filter if desired.",
+        "Export and run Free Image Compressor before you upload to the web."
+      ],
+      "sections": [
+        {
+          "heading": "Scope",
+          "body": "This is for quick fixes—red-eye, exposure tweaks, and crops—not layer-heavy retouching. Use dedicated software for high-end beauty work."
+        },
+        {
+          "heading": "Keep originals",
+          "body": "Destructive edits are hard to undo after export. Keep the camera file archived."
+        }
+      ],
+      "faq": [
+        ["RAW files?", "Check supported formats on the live tool; JPG/PNG are typical."],
+        ["Privacy?", "Edits are intended to stay on your device for typical use."]
+      ]
+    },
+    {
+      "slug": "make-gif-from-images-free",
+      "title": "Make a GIF from still images free",
+      "meta_description": "Turn a sequence of JPG or PNG frames into an animated GIF in your browser. Distinct from video-to-GIF on web-free.site.",
+      "tool_slug": "free-gif-maker",
+      "category_slugs": ["image", "video"],
+      "steps": [
+        "Prepare ordered frames (same dimensions work best).",
+        "Open Free GIF Maker and add images or use the on-screen workflow.",
+        "Set frame delay and loop behavior.",
+        "Download the GIF and check file size before Slack or email."
+      ],
+      "sections": [
+        {
+          "heading": "GIF vs video",
+          "body": "For screen captures with motion, prefer Free Video to GIF. This guide is for stop-motion style slideshows from stills."
+        },
+        {
+          "heading": "Palette limits",
+          "body": "GIF is 256 colors. High-color photos may band; simplify frames or reduce dimensions."
+        }
+      ],
+      "faq": [
+        ["Transparent GIF?", "Depends on encoder settings in the live tool."],
+        ["Meme text?", "Use Free Meme Generator if you need top/bottom captions on a template."]
+      ]
+    },
+    {
+      "slug": "convert-png-to-svg-vector-free",
+      "title": "Convert PNG to SVG vector free in the browser",
+      "meta_description": "Trace raster art to SVG for icons and laser-cut paths. Free PNG to SVG on web-free.site—no sign-up.",
+      "tool_slug": "free-png-to-svg",
+      "category_slugs": ["image"],
+      "steps": [
+        "Start with a high-contrast PNG (logo or icon works better than photos).",
+        "Open Free PNG to SVG and upload the raster.",
+        "Adjust tracing options if exposed and preview paths.",
+        "Download SVG and test in Inkscape or your cutter software."
+      ],
+      "sections": [
+        {
+          "heading": "Photos rarely vectorize well",
+          "body": "Automatic tracing turns photos into huge path counts. Use it for flat logos, not portraits."
+        },
+        {
+          "heading": "Hand cleanup",
+          "body": "Expect to simplify nodes in a vector editor for CNC or embroidery."
+        }
+      ],
+      "faq": [
+        ["Copyright?", "Only trace art you own or are licensed to use."],
+        ["Other formats?", "Export PNG from the hub image tools if you need to prep input."]
+      ]
+    },
+    {
+      "slug": "text-logo-maker-png-svg-free",
+      "title": "Text logo maker: download PNG or SVG",
+      "meta_description": "Combine fonts, colors, and layout for a simple wordmark in your browser. Free logo maker on web-free.site.",
+      "tool_slug": "free-logo-maker",
+      "category_slugs": ["image", "design"],
+      "steps": [
+        "Open Free Logo Maker and enter your brand name or acronym.",
+        "Try two or three font pairings—avoid more than one display font.",
+        "Set colors with sufficient contrast for web and print previews.",
+        "Download PNG for quick use or SVG for scalable signage."
+      ],
+      "sections": [
+        {
+          "heading": "Not a trademark service",
+          "body": "This produces artwork. Trademark clearance and font licensing are your responsibility."
+        },
+        {
+          "heading": "When you need a designer",
+          "body": "Complex mascots and brand systems still need a professional. This fits MVPs, events, and internal tools."
+        }
+      ],
+      "faq": [
+        ["Commercial use?", "Verify font licenses included in the export."],
+        ["Icon marks?", "Pair with Free QR Code Creator for event posters."]
+      ]
+    },
+    {
+      "slug": "make-meme-with-template-or-upload",
+      "title": "Make a meme with a template or your photo",
+      "meta_description": "Top and bottom caption memes in your browser. Free meme generator on web-free.site—download the image.",
+      "tool_slug": "free-meme-generator",
+      "category_slugs": ["image"],
+      "steps": [
+        "Pick a popular template or upload your own image.",
+        "Enter top and bottom text; keep lines short for mobile readability.",
+        "Preview contrast—white text with black outline is classic for a reason.",
+        "Download PNG and respect copyright on the underlying image."
+      ],
+      "sections": [
+        {
+          "heading": "Classroom and community",
+          "body": "Memes can explain concepts quickly. Use original or licensed images only."
+        },
+        {
+          "heading": "Not the same as GIF maker",
+          "body": "Memes here are static PNGs. Animated reactions belong in Free GIF Maker or video tools."
+        }
+      ],
+      "faq": [
+        ["Watermarks?", "Check export on the live tool before posting."],
+        ["Fonts?", "Stick to readable sans-serif for small screens."]
+      ]
+    },
+    {
+      "slug": "draw-signature-png-sign-pdf",
+      "title": "Draw a signature PNG and sign PDFs",
+      "meta_description": "Draw or type a signature, export transparent PNG, and apply to PDFs in the browser. Free signature generator.",
+      "tool_slug": "free-signature-generator",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Open Free Signature Generator and draw or type your signature.",
+        "Adjust stroke weight until it looks natural at document size.",
+        "Download transparent PNG for reuse.",
+        "Place the signature on a PDF when the tool offers signing or export."
+      ],
+      "sections": [
+        {
+          "heading": "Legal weight",
+          "body": "Electronic signature laws vary by country. Some contracts still need ink or qualified providers."
+        },
+        {
+          "heading": "Reuse safely",
+          "body": "Store your PNG in a password manager or encrypted folder—anyone with the file can paste it."
+        }
+      ],
+      "faq": [
+        ["Email signature?", "Use Free Email Signature Generator for HTML mail footers."],
+        ["Tablet?", "Drawing with a stylus often looks smoother than mouse input."]
+      ]
+    },
+    {
+      "slug": "html-email-signature-gmail-outlook",
+      "title": "HTML email signature for Gmail and Outlook",
+      "meta_description": "Build a professional HTML signature, copy rich text or source, and paste into mail clients. Browser-based, no upload.",
+      "tool_slug": "free-email-signature-generator",
+      "category_slugs": ["text-writing"],
+      "steps": [
+        "Open Free Email Signature Generator and fill name, title, phone, and links.",
+        "Pick a layout that degrades well on mobile (single column).",
+        "Copy HTML or rich text as instructed for your client.",
+        "Paste into Gmail, Outlook, or Apple Mail settings and send a test to yourself."
+      ],
+      "sections": [
+        {
+          "heading": "Images in signatures",
+          "body": "Linked logos must be hosted at HTTPS URLs that stay online. Broken icons embarrass new threads."
+        },
+        {
+          "heading": "Plain-text fallback",
+          "body": "Some recipients view plaintext. Ensure your phone number is visible even without HTML."
+        }
+      ],
+      "faq": [
+        ["Tracking pixels?", "Avoid hidden trackers; many clients block them."],
+        ["Company policies?", "Follow employer branding rules before you deploy."]
+      ]
+    },
+    {
+      "slug": "fake-address-generator-testing-only",
+      "title": "Fake address generator for software testing only",
+      "meta_description": "Random US/UK/Canada test addresses in the browser. QA and demos—not for real registrations. CSV export when offered.",
+      "tool_slug": "free-fake-address-generator",
+      "category_slugs": ["generators"],
+      "steps": [
+        "Open Free Fake Address Generator and choose country.",
+        "Generate a batch for your test fixture.",
+        "Export or copy into your staging database.",
+        "Label datasets clearly as synthetic in your docs."
+      ],
+      "sections": [
+        {
+          "heading": "Ethics",
+          "body": "Do not use fake addresses to bypass KYC, evade bans, or impersonate real people. Violates most terms of service."
+        },
+        {
+          "heading": "Pair with name generator",
+          "body": "Combine with Free Fake Name Generator for fuller personas in integration tests."
+        }
+      ],
+      "faq": [
+        ["Deliverable mail?", "Addresses are fictional; they will not receive post."],
+        ["Production DB?", "Never seed production with fake PII—use staging only."]
+      ]
+    },
+    {
+      "slug": "fake-name-email-generator-qa-csv",
+      "title": "Fake name and email generator for QA (CSV/JSON)",
+      "meta_description": "Personas for forms and load tests, exported as CSV or JSON. Browser-only fake name generator on web-free.site.",
+      "tool_slug": "free-fake-name-generator",
+      "category_slugs": ["generators"],
+      "steps": [
+        "Open Free Fake Name Generator and set how many rows you need.",
+        "Include email, phone, and job title fields if your form validates them.",
+        "Export CSV or JSON for your test harness.",
+        "Scrub exports after tests complete."
+      ],
+      "sections": [
+        {
+          "heading": "Realistic but random",
+          "body": "Data is statistically fake. Collisions can still happen—assert uniqueness in your tests."
+        },
+        {
+          "heading": "GDPR and demos",
+          "body": "Use synthetic data in screenshots instead of real customer exports."
+        }
+      ],
+      "faq": [
+        ["Live signups?", "Never—fraud and ToS violations."],
+        ["Password flows?", "Use Free Password Generator for secret fields, not names."]
+      ]
+    },
+    {
+      "slug": "time-zone-converter-meeting-scheduler",
+      "title": "Time zone converter for scheduling meetings",
+      "meta_description": "Convert times across zones and compare world clocks in your browser. Free time zone converter—no account.",
+      "tool_slug": "free-time-zone-converter",
+      "category_slugs": ["utilities"],
+      "steps": [
+        "Open Free Time Zone Converter and add your home zone.",
+        "Enter the meeting time in the organizer’s zone or yours.",
+        "Add participant cities (Kigali, Paris, New York, etc.).",
+        "Copy the agreed UTC or local window into the calendar invite."
+      ],
+      "sections": [
+        {
+          "heading": "DST surprises",
+          "body": "Daylight saving shifts break recurring meetings. Re-check every spring and autumn."
+        },
+        {
+          "heading": "Remote teams",
+          "body": "Share a written time with zone abbreviation (e.g. 14:00 CET) to avoid calendar app bugs."
+        }
+      ],
+      "faq": [
+        ["Offline?", "Needs accurate zone data; reload if rules change."],
+        ["Calendar sync?", "Copy values manually into Google or Outlook."]
+      ]
+    },
+    {
+      "slug": "online-whiteboard-export-png-svg",
+      "title": "Online whiteboard: sketch and export PNG or SVG",
+      "meta_description": "Draw diagrams and notes in the browser, export for slides or docs. Free whiteboard on web-free.site.",
+      "tool_slug": "free-whiteboard",
+      "category_slugs": ["design"],
+      "steps": [
+        "Open Free Whiteboard and pick pen colors that project well on Zoom.",
+        "Sketch flowcharts, mind maps, or teaching diagrams.",
+        "Use undo liberally; export before you close the tab.",
+        "Download PNG for slides or SVG for further editing."
+      ],
+      "sections": [
+        {
+          "heading": "Teaching and standups",
+          "body": "A quick whiteboard beats slide prep for architecture Q&A. Export after class to share notes."
+        },
+        {
+          "heading": "Not collaborative",
+          "body": "This guide covers solo drawing. Real-time multi-user boards need other products."
+        }
+      ],
+      "faq": [
+        ["Saved to cloud?", "Work stays in-session until you download—check live tool."],
+        ["Stylus?", "Tablets with pen input give smoother lines."]
+      ]
+    }
+  ]
+}

@@ -36,7 +36,7 @@
     {
       "slug": "remove-background-from-image-free-no-signup",
       "title": "Remove background from an image free with no sign-up",
-      "meta_description": "Cut out a photo background in your browser and download a transparent PNG. No account on web-free.site.",
+      "meta_description": "Product and portrait cutouts: browser background removal and transparent PNG export on web-free.site—no account.",
       "tool_slug": "free-background-remover",
       "category_slugs": ["image"],
       "steps": [
@@ -53,6 +53,10 @@
         {
           "heading": "Hard edges and hair",
           "body": "Busy hair and glass reflections are never perfect. Zoom in on the preview and touch up stray pixels in a photo editor if the listing must be flawless."
+        },
+        {
+          "heading": "Local cutout vs upload APIs",
+          "body": "Upload-based services can be excellent on product shots but send pixels off-device. This guide’s tool targets in-browser segmentation—read the hub comparison “background removal vs cloud APIs” before you pick a workflow for a whole catalog."
         }
       ],
       "faq": [
@@ -135,7 +139,7 @@
     {
       "slug": "format-json-online-validate-pretty-print",
       "title": "Format JSON online: pretty-print and validate",
-      "meta_description": "Pretty-print, minify, and fix JSON syntax in your browser. Free formatter on web-free.site—data stays local.",
+      "meta_description": "Fix invalid JSON, pretty-print API responses, and minify configs in your browser—Web Free JSON formatter, no account.",
       "tool_slug": "free-json-formatter",
       "category_slugs": ["developer"],
       "steps": [
@@ -152,12 +156,16 @@
         {
           "heading": "Secrets hygiene",
           "body": "Never paste production API keys on a shared computer. Client-side formatting reduces exposure but does not remove clipboard history—close the tab when finished."
+        },
+        {
+          "heading": "When an IDE is enough",
+          "body": "If you already work in VS Code, pasting into a `.json` file may be faster. Use this guide’s tool when you are in a ticket, chat log, or dashboard without a project open—see also the hub comparison “JSON formatter vs IDE.”"
         }
       ],
       "faq": [
         [
           "Does it store my paste?",
-          "The formatter is intended for client-side use with no hub account."
+          "The formatter is intended for client-side use with no hub account; nothing is saved on the hub."
         ],
         [
           "Can I minify for production?",
@@ -168,7 +176,7 @@
     {
       "slug": "merge-pdf-without-uploading",
       "title": "Merge PDF files without uploading to the cloud",
-      "meta_description": "Combine PDFs in your browser—merge, split, and compress without a sign-up. Free PDF converter on web-free.site.",
+      "meta_description": "Combine multiple PDFs in one tab—merge workflow for contracts and packets. Free PDF converter on web-free.site.",
       "tool_slug": "free-pdf-converter",
       "category_slugs": ["text-writing"],
       "steps": [
@@ -185,6 +193,10 @@
         {
           "heading": "After merging",
           "body": "If the file is too large for email, run compress in the same tool or split into chapters before you send."
+        },
+        {
+          "heading": "Not the same as Acrobat",
+          "body": "This walkthrough covers everyday merge and split. It does not replace certified signatures or print-shop preflight—see the hub comparison “browser PDF vs desktop Acrobat” if you are choosing between workflows."
         }
       ],
       "faq": [
@@ -201,7 +213,7 @@
     {
       "slug": "compress-images-for-website-free",
       "title": "Compress images for your website without upload",
-      "meta_description": "Shrink JPG, PNG, WebP, and AVIF in the browser. Batch image compressor on web-free.site—no account.",
+      "meta_description": "Step-by-step: shrink JPG, PNG, WebP, and AVIF for faster pages using the browser image compressor on web-free.site—no account.",
       "tool_slug": "free-image-compressor",
       "category_slugs": ["image"],
       "steps": [
@@ -217,7 +229,7 @@
         },
         {
           "heading": "Pair with resize",
-          "body": "Downscale oversized camera photos before compressing—pixels you never display should not ship to visitors."
+          "body": "Downscale oversized camera photos with Free Image Resizer before compressing—pixels you never display should not ship to visitors. For how browser compression compares to desktop catalogs, read the honest comparison guide on the hub (search “image compressor vs desktop”)."
         }
       ],
       "faq": [

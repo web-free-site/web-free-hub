@@ -16,7 +16,10 @@ from content_blocks import (
     CATEGORY_FAQ,
     CONTACT_BODY,
     HOME_FAQ,
+    HOME_GUIDES,
     HOME_INTRO,
+    TOOL_FAQ,
+    TOOL_STEPS,
     privacy_html,
     terms_html,
 )
@@ -32,14 +35,15 @@ SITE = "https://web-free.site"
 TITLE_EN = "Web Free — Free Online Tools"
 TITLE_FR = "Web Free — Outils en ligne gratuits"
 DESC_EN = (
-    "Browse 50 free browser tools on web-free.site — PDF, images, video, "
-    "calculators, developers utilities, and more. No sign-up."
+    "Browse 50 free online tools on web-free.site: PDF editor, image compressor, "
+    "JSON formatter, QR codes, speech-to-text, calculators, and video utilities. "
+    "No sign-up, runs in your browser."
 )
 DESC_FR = (
     "Annuaire d’outils en ligne gratuits sur web-free.site : PDF, CV, devises, "
     "QR codes, images, factures et plus. Sans inscription."
 )
-HERO_EN = "Free online tools, no sign-up."
+HERO_EN = "Free online tools — PDF, images, video, and more"
 HERO_FR = "Des outils en ligne gratuits, sans inscription."
 INTRO_FR = (
     "Web Free rassemble des utilitaires gratuits qui s’utilisent dans le navigateur. "
@@ -236,11 +240,6 @@ def footer_block(depth: int = 0, lang: str = "en") -> str:
         f"      {fine}\n"
         '      <p class="founded-by">Founded by '
         '<a href="https://gentil.quevvy.com" rel="author">Gentil M.</a></p>\n'
-        '      <p class="twelve-tools-badge">\n'
-        '        <a href="https://twelve.tools" target="_blank">'
-        '<img src="https://twelve.tools/badge0-light.svg" '
-        'alt="Featured&#0032;on&#0032;Twelve&#0032;Tools" width="200" height="54"></a>\n'
-        "      </p>\n"
         "    </div>\n"
         "  </footer>\n"
     )
@@ -334,7 +333,36 @@ def tool_long_copy(tool: dict) -> str:
     return " ".join(text.split()[:200])
 
 
+def tool_faqs(tool: dict) -> list[tuple[str, str]]:
+    slug = tool["slug"]
+    if slug in TOOL_FAQ:
+        return TOOL_FAQ[slug]
+    short = re.sub(r"^Free ", "", tool["name"])
+    qas: list[tuple[str, str]] = [
+        (
+            f"Is {short} free to use?",
+            "Yes. You can open the tool without creating a Web Free account. There is no paid tier on the hub listing.",
+        ),
+        (
+            f"Does {short} require an install?",
+            "No. It runs in a modern browser on its own web-free.site subdomain. Bookmark the live tool page if you use it often.",
+        ),
+    ]
+    note = privacy_note(tool)
+    if "in your browser" in tool["desc_en"].lower():
+        qas.append(
+            (
+                "Where is my data processed?",
+                note,
+            )
+        )
+    return qas[:3]
+
+
 def tool_steps(tool: dict) -> list[str]:
+    custom = TOOL_STEPS.get(tool["slug"])
+    if custom:
+        return custom
     return [
         f"Open {tool['name']} using the button below (opens the live tool in a new context).",
         "Choose the option or mode that matches your task in the on-screen controls.",
@@ -440,6 +468,11 @@ def homepage_en() -> str:
     for q, a in HOME_FAQ:
         faq_html.append(f"      <details class=\"faq-item\"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>")
 
+    guide_blocks = []
+    for gtitle, gbody in HOME_GUIDES:
+        guide_blocks.append(f"      <h3>{esc(gtitle)}</h3>")
+        guide_blocks.append(f"      <p>{esc(gbody)}</p>")
+
     intro_paras = "".join(f"<p>{esc(p)}</p>" for p in HOME_INTRO.strip().split("\n\n"))
 
     return "\n".join(
@@ -480,6 +513,10 @@ def homepage_en() -> str:
             "    </section>",
             '    <section class="prose intro-block">',
             intro_paras,
+            "    </section>",
+            '    <section class="panel prose how-to-guides" aria-labelledby="h-guides">',
+            '      <h2 id="h-guides">How-to guides</h2>',
+            *guide_blocks,
             "    </section>",
             '    <section class="panel directory" aria-labelledby="h-all">',
             '      <h2 id="h-all">All tools</h2>',
@@ -528,21 +565,23 @@ def tool_page(tool: dict) -> str:
     body = tool_long_copy(tool)
     short_name = short
 
-    app_ld = {
-        "@context": "https://schema.org",
-        "@graph": [
-            json.loads(breadcrumbs_ld(crumbs)),
-            {
-                "@type": "SoftwareApplication",
-                "name": tool["name"],
-                "url": tool_href(tool),
-                "applicationCategory": "UtilitiesApplication",
-                "operatingSystem": "Web Browser",
+    graph_nodes: list = [
+        json.loads(breadcrumbs_ld(crumbs)),
+        {
+            "@type": "SoftwareApplication",
+            "name": tool["name"],
+            "url": tool_href(tool),
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Web Browser",
                 "description": tool["desc_en"],
+                "isAccessibleForFree": True,
                 "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
             },
-        ],
-    }
+    ]
+    tool_qas = tool_faqs(tool)
+    if tool_qas:
+        graph_nodes.append(json.loads(faq_ld(tool_qas)))
+    app_ld = {"@context": "https://schema.org", "@graph": graph_nodes}
     extra_ld = json.dumps(app_ld, ensure_ascii=False, indent=2)
 
     rel_html = []
@@ -550,6 +589,26 @@ def tool_page(tool: dict) -> str:
         rel_html.append(
             f'        <a class="card tool-card" href="/tools/{esc(r["slug"])}/">{esc(r["name"])}</a>'
         )
+
+    faq_section: list[str] = []
+    if tool_qas:
+        faq_items = []
+        for q, a in tool_qas:
+            faq_items.append(
+                f'      <details class="faq-item"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>'
+            )
+        faq_section = [
+            '    <section class="panel faq" aria-labelledby="h-tfaq">',
+            '      <h2 id="h-tfaq">FAQ</h2>',
+            *faq_items,
+            "    </section>",
+        ]
+
+    hub_links = (
+        f'      <p>Part of the <a href="/">Web Free hub</a> — '
+        f'<a href="/category/{esc(cat_page_slug)}/">{esc(cat["name_en"])}</a> '
+        f'(<a href="/tools/{esc(slug)}/">this page</a>).</p>'
+    )
 
     return "\n".join(
         [
@@ -577,7 +636,9 @@ def tool_page(tool: dict) -> str:
             "      </ul>",
             "      <h2>Privacy note</h2>",
             f"      <p>{esc(privacy_note(tool))}</p>",
+            hub_links,
             "    </section>",
+            *faq_section,
             '    <section class="panel" aria-labelledby="h-related">',
             '      <h2 id="h-related">Related tools</h2>',
             '      <div class="card-grid">',

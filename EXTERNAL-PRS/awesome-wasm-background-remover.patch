@@ -1,0 +1,10 @@
+--- a/README.md
++++ b/README.md
+@@ -62,6 +62,8 @@
+ - [Zippic](https://zippic.app) — Free in-browser image compressor/converter (JPG/PNG/WebP/AVIF etc.) using WebAssembly codecs; files never leave the browser.
+ 
++- [Free Background Remover](https://free-background-remover.web-free.site/?ref=awesome-wasm-applications) — Remove photo backgrounds in the browser with BiRefNet via ONNX Runtime Web; images stay on your device. No sign-up.
++
+ - [IconKing](https://iconking.net) — Free browser-based Lottie animation tool. Preview .json/.lottie files, edit colors across all layers, and convert between Lottie JSON ↔ dotLottie formats. 100% client-side via WebAssembly — files never leave the browser.
+ 
+<!-- PR body: Proof https://web-free.site/tools/free-background-remover/ · Hub privacy https://web-free.site/privacy/ -->

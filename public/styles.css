@@ -300,3 +300,20 @@ h1 {
 .cat-links a:hover { text-decoration: underline; }
 .directory-list .tool { grid-template-columns: 1fr; }
 
+.cmp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.25rem;
+  font-size: 0.95rem;
+}
+.cmp-table th,
+.cmp-table td {
+  border: 1px solid var(--border, #d8d0c4);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+.cmp-table thead th {
+  background: var(--panel, #ebe4d8);
+}
+

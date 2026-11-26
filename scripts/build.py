@@ -14,6 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 from content_blocks import (
     ABOUT_BODY,
     CATEGORY_FAQ,
+    CATEGORY_GUIDES,
     CONTACT_BODY,
     HOME_FAQ,
     HOME_GUIDES,
@@ -690,6 +691,18 @@ def category_page(page: dict) -> str:
 
     intro = "".join(f"<p>{esc(para)}</p>" for para in page["intro"].strip().split("\n\n"))
 
+    guide_bits = []
+    for para in CATEGORY_GUIDES.get(slug, []):
+        guide_bits.append(f"<p>{esc(para)}</p>")
+    guide_section = []
+    if guide_bits:
+        guide_section = [
+            '    <section class="panel prose" aria-labelledby="h-cguide">',
+            '      <h2 id="h-cguide">Quick picks</h2>',
+            "".join(guide_bits),
+            "    </section>",
+        ]
+
     other = []
     for p in other_categories(slug)[:6]:
         other.append(f'        <a href="/category/{esc(p["slug"])}/">{esc(p["title"])}</a>')
@@ -713,6 +726,7 @@ def category_page(page: dict) -> str:
             "    </nav>",
             f"    <h1>{esc(page['title'])}</h1>",
             f'    <section class="prose">{intro}</section>',
+            *guide_section,
             '    <section class="panel" aria-labelledby="h-tools">',
             '      <h2 id="h-tools">Tools in this category</h2>',
             '      <div class="card-grid">',

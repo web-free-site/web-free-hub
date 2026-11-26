@@ -443,6 +443,23 @@ TOOL_FAQ: dict[str, list[tuple[str, str]]] = {
     ],
 }
 
+# Optional short guides on category hub pages (slug → paragraphs).
+CATEGORY_GUIDES: dict[str, list[str]] = {
+    "image": [
+        "Start with Free Image Compressor when file size is the problem and Free Image Resizer when dimensions matter.",
+        "For marketplace listings, run Background Remover first, then compress WebP or AVIF for faster page loads.",
+        "HEIC from iPhones should go through Free HEIC to JPG before uploading to sites that reject Apple formats.",
+    ],
+    "video": [
+        "Compress with Free Video Compressor before WhatsApp or email attachments; extract audio with Free Video to MP3 if only sound is needed.",
+        "Convert exotic containers to MP4 with Free Video Converter before editing elsewhere.",
+    ],
+    "developer": [
+        "Paste API responses into Free JSON Formatter, then diff configs with Free Diff Checker before deploy.",
+        "Use Free Speech to Text for interview notes; export SRT when you need captions.",
+    ],
+}
+
 CATEGORY_FAQ = {
     "text-writing": [
         (
